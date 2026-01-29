@@ -1,0 +1,104 @@
+/* Main */
+.main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Page Header */
+.pageHeader {
+  text-align: center;
+  padding: 3rem 2rem;
+  margin-bottom: 3rem;
+}
+
+.pageHeader h1 {
+  font-size: 2.5rem;
+  color: var(--dark-green);
+  margin-bottom: 1rem;
+}
+
+.pageHeader p {
+  font-size: 1.2rem;
+  color: var(--text-light);
+}
+
+/* Products Grid */
+.productsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.productCard {
+  background: var(--white);
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s;
+  display: flex;
+  flex-direction: column;
+}
+
+.productCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(168, 230, 163, 0.3);
+}
+
+.productEmoji {
+  font-size: 4rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.productName {
+  color: var(--text-dark);
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.productDescription {
+  color: var(--text-light);
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+  flex-grow: 1;
+  line-height: 1.6;
+}
+
+.productInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding: 0.75rem 0;
+  border-top: 1px solid var(--light-green);
+  border-bottom: 1px solid var(--light-green);
+}
+
+.calories {
+  color: var(--text-light);
+  font-size: 0.9rem;
+}
+
+.price {
+  color: var(--dark-green);
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.orderButton {
+  background-color: var(--pastel-green);
+  color: var(--text-dark);
+  padding: 0.75rem 1.5rem;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.orderButton:hover {
+  background-color: var(--dark-green);
+  color: var(--white);
+  transform: scale(1.02);
+}

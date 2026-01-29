@@ -1,0 +1,253 @@
+/* Main */
+.main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Back Link */
+.backLink {
+  display: inline-block;
+  color: var(--dark-green);
+  font-weight: 500;
+  margin-bottom: 2rem;
+  transition: all 0.3s;
+}
+
+.backLink:hover {
+  color: var(--text-dark);
+  transform: translateX(-5px);
+}
+
+/* Product Header */
+.productHeader {
+  background: linear-gradient(135deg, var(--light-green) 0%, var(--pastel-green) 100%);
+  border-radius: 20px;
+  padding: 3rem;
+  margin-bottom: 3rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.productEmoji {
+  font-size: 6rem;
+  flex-shrink: 0;
+}
+
+.headerInfo {
+  flex: 1;
+}
+
+.productName {
+  font-size: 2.5rem;
+  color: var(--text-dark);
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.shortDescription {
+  color: var(--text-light);
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.priceCalories {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.price {
+  font-size: 2rem;
+  color: var(--dark-green);
+  font-weight: 700;
+}
+
+.calories {
+  background: var(--white);
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  color: var(--text-light);
+  font-weight: 600;
+}
+
+/* Content Grid */
+.contentGrid {
+  display: grid;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.section {
+  background: var(--white);
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.section h2 {
+  color: var(--dark-green);
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.fullDescription {
+  color: var(--text-light);
+  line-height: 1.8;
+  font-size: 1.05rem;
+}
+
+/* Ingredients List */
+.ingredientsList {
+  list-style: none;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.ingredientsList li {
+  color: var(--text-light);
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.5rem 0;
+}
+
+.checkmark {
+  color: var(--dark-green);
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* Nutrition Grid */
+.nutritionGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1.5rem;
+}
+
+.nutritionItem {
+  background: var(--background);
+  padding: 1.5rem;
+  border-radius: 10px;
+  text-align: center;
+  border: 2px solid var(--light-green);
+}
+
+.nutritionLabel {
+  display: block;
+  color: var(--text-light);
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.nutritionValue {
+  display: block;
+  color: var(--dark-green);
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+/* Benefits List */
+.benefitsList {
+  list-style: none;
+  display: grid;
+  gap: 1rem;
+}
+
+.benefitsList li {
+  color: var(--text-light);
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 0.75rem;
+  background: var(--background);
+  border-radius: 8px;
+  line-height: 1.6;
+}
+
+.icon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+/* Allergen Warning */
+.allergenWarning {
+  background: #FFF9E6;
+  border: 2px solid #FFE066;
+  border-radius: 10px;
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.warningIcon {
+  font-size: 2rem;
+  flex-shrink: 0;
+}
+
+.allergenWarning p {
+  color: var(--text-dark);
+  margin: 0;
+  font-weight: 500;
+}
+
+/* Order Section */
+.orderSection {
+  background: linear-gradient(135deg, var(--pastel-green) 0%, var(--dark-green) 100%);
+  padding: 2.5rem;
+  border-radius: 20px;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.orderButton {
+  background: var(--white);
+  color: var(--dark-green);
+  padding: 1.25rem 3rem;
+  border-radius: 50px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  transition: all 0.3s;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+}
+
+.orderButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.deliveryInfo {
+  color: var(--white);
+  font-weight: 500;
+  margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .productHeader {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem;
+  }
+
+  .productEmoji {
+    font-size: 4rem;
+  }
+
+  .productName {
+    font-size: 2rem;
+  }
+
+  .priceCalories {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .nutritionGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

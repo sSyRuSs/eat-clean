@@ -1,0 +1,110 @@
+/* Main */
+.main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, var(--light-green) 0%, var(--pastel-green) 100%);
+  border-radius: 20px;
+  margin-bottom: 4rem;
+}
+
+.heroTitle {
+  font-size: 3rem;
+  color: var(--text-dark);
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.heroSubtitle {
+  font-size: 1.25rem;
+  color: var(--text-light);
+  margin-bottom: 2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ctaButton {
+  display: inline-block;
+  background-color: var(--dark-green);
+  color: var(--white);
+  padding: 1rem 2.5rem;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: all 0.3s;
+  box-shadow: 0 4px 15px rgba(109, 184, 107, 0.3);
+}
+
+.ctaButton:hover {
+  background-color: #5DA75B;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(109, 184, 107, 0.4);
+}
+
+/* Features */
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.featureCard {
+  background: var(--white);
+  padding: 2rem;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s;
+}
+
+.featureCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(168, 230, 163, 0.3);
+}
+
+.featureIcon {
+  font-size: 3rem;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.featureCard h3 {
+  color: var(--dark-green);
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+}
+
+.featureCard p {
+  color: var(--text-light);
+}
+
+/* About Section */
+.aboutSection {
+  background: var(--white);
+  padding: 3rem;
+  border-radius: 15px;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.aboutSection h2 {
+  color: var(--dark-green);
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+}
+
+.aboutSection p {
+  color: var(--text-light);
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+}
