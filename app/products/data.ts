@@ -11,6 +11,8 @@ export interface Product {
     en: string
   }
   price: string
+  priceValue: number
+  category: string
   calories: string
   emoji: string
   fullDescription: {
@@ -49,6 +51,8 @@ export const products: Product[] = [
       en: 'Grilled chicken breast, quinoa, fresh greens, balsamic dressing'
     },
     price: '65.000đ',
+    priceValue: 65000,
+    category: 'Salad',
     calories: '350 kcal',
     emoji: '🥗',
     fullDescription: {
@@ -111,10 +115,12 @@ export const products: Product[] = [
       en: 'Brown Rice Salmon Bowl'
     },
     description: {
-      vi: 'Cá hồi nướng, gạo lứt, súp lơ xanh, cà rót',
+      vi: 'Cá hồi nướng, gạo lứt, súp lơ xanh, cà rốt',
       en: 'Grilled salmon, brown rice, broccoli, carrots'
     },
     price: '85.000đ',
+    priceValue: 85000,
+    category: 'Bowl',
     calories: '420 kcal',
     emoji: '🍱',
     fullDescription: {
@@ -181,6 +187,8 @@ export const products: Product[] = [
       en: 'Strawberry, banana, granola, chia seeds, honey'
     },
     price: '55.000đ',
+    priceValue: 55000,
+    category: 'Breakfast',
     calories: '280 kcal',
     emoji: '🥣',
     fullDescription: {
@@ -247,6 +255,8 @@ export const products: Product[] = [
       en: 'Whole wheat tortilla, shredded chicken, avocado, vegetables'
     },
     price: '60.000đ',
+    priceValue: 60000,
+    category: 'Wrap',
     calories: '380 kcal',
     emoji: '🌯',
     fullDescription: {
@@ -313,6 +323,8 @@ export const products: Product[] = [
       en: 'Fresh tuna, Japanese rice, edamame, seaweed'
     },
     price: '95.000đ',
+    priceValue: 95000,
+    category: 'Bowl',
     calories: '450 kcal',
     emoji: '🍲',
     fullDescription: {
@@ -381,6 +393,8 @@ export const products: Product[] = [
       en: 'Celery, cucumber, green apple, ginger, lemon'
     },
     price: '45.000đ',
+    priceValue: 45000,
+    category: 'Beverage',
     calories: '120 kcal',
     emoji: '🥤',
     fullDescription: {

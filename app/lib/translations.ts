@@ -108,9 +108,56 @@ export const translations = {
       goHome: "Về trang chủ",
       viewProducts: "Xem sản phẩm"
     },
-    
+
+    // Testimonials
+    testimonials: {
+      title: "Đánh giá từ khách hàng",
+      subtitle: "Hàng ngàn khách hàng hài lòng với sản phẩm Eat Clean"
+    },
+
+    // FAQ
+    faq: {
+      title: "Câu hỏi thường gặp",
+      subtitle: "Tìm hiểu thêm về Eat Clean và các sản phẩm của chúng tôi"
+    },
+
+    // Search & Filter
+    search: {
+      label: "Tìm kiếm sản phẩm",
+      placeholder: "Nhập tên sản phẩm...",
+      category: "Danh mục",
+      allCategories: "Tất cả danh mục",
+      price: "Khoảng giá",
+      reset: "Đặt lại bộ lọc",
+      found: "Tìm thấy",
+      noResults: "Không tìm thấy sản phẩm nào phù hợp",
+      addToCart: "Thêm vào giỏ"
+    },
+
+    // Newsletter
+    newsletter: {
+      title: "Đăng ký nhận tin tức",
+      subtitle: "Cập nhật những công thức nấu ăn lành mạnh, mẹo dinh dưỡng và ưu đãi đặc biệt cho khách hàng của chúng tôi.",
+      placeholder: "Nhập email của bạn",
+      subscribe: "Đăng ký",
+      benefits: "Bạn sẽ nhận được:",
+      benefit1: "Công thức nấu ăn sạch hàng tuần",
+      benefit2: "Ưu đãi và giảm giá độc quyền",
+      benefit3: "Mẹo dinh dưỡng từ chuyên gia",
+      benefit4: "Thông tin sản phẩm mới trước tiên",
+      success: "Cảm ơn bạn! Hãy kiểm tra email của bạn.",
+      error: "Vui lòng nhập email hợp lệ"
+    },
+
     // Footer
-    footer: "Ăn sạch mỗi ngày, khỏe mạnh mọi lúc."
+    footer: {
+      about: "Về Eat Clean",
+      contact: "Liên hệ",
+      followUs: "Theo dõi chúng tôi",
+      address: "123 Đường Eat Clean, Quận 1, TP.HCM",
+      phone: "0123 456 789",
+      email: "hello@eatclean.vn"
+    }
   },
   
   en: {
@@ -222,9 +269,56 @@ export const translations = {
       goHome: "Go to Homepage",
       viewProducts: "View Products"
     },
-    
+
+    // Testimonials
+    testimonials: {
+      title: "Customer Reviews",
+      subtitle: "Thousands of satisfied customers trust Eat Clean"
+    },
+
+    // FAQ
+    faq: {
+      title: "Frequently Asked Questions",
+      subtitle: "Find answers to common questions about Eat Clean and our products"
+    },
+
+    // Search & Filter
+    search: {
+      label: "Search products",
+      placeholder: "Search by product name...",
+      category: "Category",
+      allCategories: "All Categories",
+      price: "Price Range",
+      reset: "Reset Filters",
+      found: "Found",
+      noResults: "No products match your filters",
+      addToCart: "Add to Cart"
+    },
+
+    // Newsletter
+    newsletter: {
+      title: "Subscribe to Our Newsletter",
+      subtitle: "Get healthy recipes, nutrition tips and exclusive offers for our subscribers.",
+      placeholder: "Enter your email",
+      subscribe: "Subscribe",
+      benefits: "You will receive:",
+      benefit1: "Weekly clean eating recipes",
+      benefit2: "Exclusive discounts and offers",
+      benefit3: "Expert nutrition tips",
+      benefit4: "First access to new products",
+      success: "Thank you! Please check your email.",
+      error: "Please enter a valid email"
+    },
+
     // Footer
-    footer: "Eat clean every day, stay healthy always."
+    footer: {
+      about: "About Eat Clean",
+      contact: "Contact",
+      followUs: "Follow Us",
+      address: "123 Eat Clean Street, District 1, HCMC",
+      phone: "0123 456 789",
+      email: "hello@eatclean.vn"
+    }
   }
 }
 

@@ -4,6 +4,9 @@ import Link from 'next/link'
 import { useLanguage } from './lib/LanguageContext'
 import Header from './components/Header'
 import Footer from './components/Footer'
+import Testimonials from './components/Testimonials'
+import FAQ from './components/FAQ'
+import Newsletter from './components/Newsletter'
 import styles from './page.module.css'
 
 export default function Home() {
@@ -48,6 +51,12 @@ export default function Home() {
           <h2>{t.home.aboutTitle}</h2>
           <p>{t.home.aboutText}</p>
         </section>
+
+        <Testimonials />
+
+        <FAQ />
+
+        <Newsletter />
       </main>
 
       <Footer />
