@@ -73,6 +73,42 @@ export const translations = {
       emailText: "hello@eatclean.vn"
     },
     
+    // Cart
+    cart: {
+      title: "Giỏ hàng",
+      empty: "Giỏ hàng trống",
+      total: "Tổng cộng",
+      checkout: "Đặt hàng",
+      continueShopping: "Tiếp tục mua sắm",
+      quantity: "Số lượng",
+      remove: "Xóa"
+    },
+    
+    // Order Form
+    orderForm: {
+      title: "Thông tin đặt hàng",
+      name: "Họ và tên",
+      namePlaceholder: "Nguyễn Văn A",
+      phone: "Số điện thoại",
+      phonePlaceholder: "0123 456 789",
+      address: "Địa chỉ giao hàng",
+      addressPlaceholder: "123 Đường ABC, Quận 1, TP.HCM",
+      note: "Ghi chú (tùy chọn)",
+      notePlaceholder: "Yêu cầu đặc biệt...",
+      submit: "Xác nhận đặt hàng",
+      cancel: "Hủy",
+      successTitle: "Đặt hàng thành công!",
+      successMessage: "Cảm ơn bạn đã đặt hàng. Chúng tôi sẽ liên hệ với bạn trong thời gian sớm nhất.",
+      close: "Đóng"
+    },
+
+    notFound: {
+      title: "Không tìm thấy trang",
+      description: "Xin lỗi, trang bạn đang tìm kiếm không tồn tại hoặc đã được di chuyển.",
+      goHome: "Về trang chủ",
+      viewProducts: "Xem sản phẩm"
+    },
+    
     // Footer
     footer: "Ăn sạch mỗi ngày, khỏe mạnh mọi lúc."
   },
@@ -149,6 +185,42 @@ export const translations = {
       phoneText: "0123 456 789",
       emailLabel: "Email",
       emailText: "hello@eatclean.vn"
+    },
+    
+    // Cart
+    cart: {
+      title: "Shopping Cart",
+      empty: "Cart is empty",
+      total: "Total",
+      checkout: "Checkout",
+      continueShopping: "Continue Shopping",
+      quantity: "Quantity",
+      remove: "Remove"
+    },
+    
+    // Order Form
+    orderForm: {
+      title: "Order Information",
+      name: "Full Name",
+      namePlaceholder: "John Doe",
+      phone: "Phone Number",
+      phonePlaceholder: "0123 456 789",
+      address: "Delivery Address",
+      addressPlaceholder: "123 ABC Street, District 1, HCMC",
+      note: "Note (Optional)",
+      notePlaceholder: "Special requests...",
+      submit: "Confirm Order",
+      cancel: "Cancel",
+      successTitle: "Order Successful!",
+      successMessage: "Thank you for your order. We will contact you as soon as possible.",
+      close: "Close"
+    },
+
+    notFound: {
+      title: "Page Not Found",
+      description: "Sorry, the page you're looking for doesn't exist or has been moved.",
+      goHome: "Go to Homepage",
+      viewProducts: "View Products"
     },
     
     // Footer

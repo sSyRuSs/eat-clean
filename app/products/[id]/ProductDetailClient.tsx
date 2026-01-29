@@ -2,6 +2,7 @@
 
 import Link from 'next/link'
 import { useLanguage } from '@/app/lib/LanguageContext'
+import { useCart } from '@/app/lib/CartContext'
 import Header from '@/app/components/Header'
 import Footer from '@/app/components/Footer'
 import styles from './product-detail.module.css'
@@ -13,7 +14,12 @@ interface ProductDetailClientProps {
 
 export default function ProductDetailClient({ product }: ProductDetailClientProps) {
   const { language, t } = useLanguage()
+  const { addToCart } = useCart()
   const allergens = getProductAllergens(product, language)
+
+  const handleAddToCart = () => {
+    addToCart(product)
+  }
 
   return (
     <>
@@ -100,7 +106,7 @@ export default function ProductDetailClient({ product }: ProductDetailClientProp
         </div>
 
         <div className={styles.orderSection}>
-          <button className={styles.orderButton}>
+          <button className={styles.orderButton} onClick={handleAddToCart}>
             {t.productDetail.orderButton} - {product.price}
           </button>
           <p className={styles.deliveryInfo}>

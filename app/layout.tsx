@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import './globals.css'
 import { LanguageProvider } from './lib/LanguageContext'
+import { CartProvider } from './lib/CartContext'
 
 export const metadata: Metadata = {
   title: 'Eat Clean - Healthy Food for Life',
@@ -16,7 +17,9 @@ export default function RootLayout({
     <html lang="vi">
       <body>
         <LanguageProvider>
-          {children}
+          <CartProvider>
+            {children}
+          </CartProvider>
         </LanguageProvider>
       </body>
     </html>
