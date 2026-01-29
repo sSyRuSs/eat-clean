@@ -1,0 +1,281 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  color: #2d5016;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.header p {
+  font-size: 1.1rem;
+  color: #666;
+}
+
+.calculatorSection {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+.formSection,
+.resultSection {
+  background: #ffffff;
+  border: 2px solid #A8E6A3;
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+.formSection h2,
+.resultSection h2 {
+  color: #2d5016;
+  font-size: 1.5rem;
+  margin-bottom: 25px;
+  font-weight: 600;
+}
+
+.fieldgroup {
+  margin-bottom: 20px;
+}
+
+.fieldgroup label {
+  display: block;
+  color: #2d5016;
+  font-weight: 500;
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+}
+
+.segmentedButtons {
+  display: flex;
+  gap: 10px;
+  border: 2px solid #A8E6A3;
+  border-radius: 8px;
+  padding: 4px;
+  background: #f9fbf9;
+}
+
+.segmentBtn {
+  flex: 1;
+  padding: 10px 16px;
+  border: none;
+  background: transparent;
+  color: #2d5016;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  font-size: 0.95rem;
+}
+
+.segmentBtn:hover {
+  background: rgba(168, 230, 163, 0.2);
+}
+
+.segmentBtn.active {
+  background: #A8E6A3;
+  color: #2d5016;
+  font-weight: 600;
+}
+
+.input,
+.select {
+  width: 100%;
+  padding: 12px 16px;
+  border: 2px solid #A8E6A3;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-family: inherit;
+  color: #2d5016;
+  background: #f9fbf9;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+.input:focus,
+.select:focus {
+  outline: none;
+  border-color: #90d88b;
+  box-shadow: 0 0 0 3px rgba(168, 230, 163, 0.2);
+  background: #ffffff;
+}
+
+.select {
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%232d5016' stroke-width='2'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 20px;
+  padding-right: 40px;
+}
+
+.saveBtn {
+  width: 100%;
+  padding: 14px 24px;
+  background: linear-gradient(135deg, #A8E6A3 0%, #90d88b 100%);
+  color: #2d5016;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+.saveBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(168, 230, 163, 0.4);
+}
+
+.resultSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.resultCard {
+  background: linear-gradient(135deg, rgba(168, 230, 163, 0.1) 0%, rgba(144, 216, 139, 0.1) 100%);
+  border: 2px solid #A8E6A3;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.resultItem {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.label {
+  color: #2d5016;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.value {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #A8E6A3;
+}
+
+.unit {
+  color: #666;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.note {
+  background: rgba(168, 230, 163, 0.2);
+  border-left: 4px solid #A8E6A3;
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.note p {
+  color: #2d5016;
+  font-size: 0.95rem;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 300px;
+  text-align: center;
+}
+
+.placeholder p {
+  color: #999;
+  font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .calculatorSection {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .header h1 {
+    font-size: 2rem;
+  }
+
+  .container {
+    padding: 30px 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header h1 {
+    font-size: 1.7rem;
+  }
+
+  .header p {
+    font-size: 1rem;
+  }
+
+  .formSection,
+  .resultSection {
+    padding: 20px;
+  }
+
+  .value {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .header {
+    margin-bottom: 30px;
+  }
+
+  .header h1 {
+    font-size: 1.5rem;
+  }
+
+  .formSection,
+  .resultSection {
+    padding: 15px;
+  }
+
+  .fieldgroup {
+    margin-bottom: 15px;
+  }
+
+  .segmentedButtons {
+    gap: 8px;
+  }
+
+  .segmentBtn {
+    padding: 8px 12px;
+    font-size: 0.9rem;
+  }
+
+  .input,
+  .select {
+    padding: 10px 12px;
+    font-size: 0.9rem;
+  }
+
+  .value {
+    font-size: 1.6rem;
+  }
+}

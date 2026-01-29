@@ -6,6 +6,7 @@ import Header from './components/Header'
 import Footer from './components/Footer'
 import PromoBanner from './components/PromoBanner'
 import Gallery from './components/Gallery'
+import CalorieTracker from './components/CalorieTracker'
 import Testimonials from './components/Testimonials'
 import FAQ from './components/FAQ'
 import Newsletter from './components/Newsletter'
@@ -57,6 +58,8 @@ export default function Home() {
         </section>
 
         <Gallery />
+
+        <CalorieTracker />
 
         <Testimonials />
 

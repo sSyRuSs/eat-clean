@@ -1,0 +1,85 @@
+.container {
+  background: #ffffff;
+  border: 2px solid #A8E6A3;
+  border-radius: 16px;
+  padding: 25px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+.container h3 {
+  color: #2d5016;
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.fieldgroup {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.fieldgroup label {
+  color: #2d5016;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.input {
+  padding: 10px 12px;
+  border: 2px solid #A8E6A3;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-family: inherit;
+  color: #2d5016;
+  background: #f9fbf9;
+  transition: all 0.3s ease;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #90d88b;
+  box-shadow: 0 0 0 3px rgba(168, 230, 163, 0.2);
+  background: #ffffff;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.addBtn {
+  padding: 12px 20px;
+  background: linear-gradient(135deg, #A8E6A3 0%, #90d88b 100%);
+  color: #2d5016;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 5px;
+}
+
+.addBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(168, 230, 163, 0.4);
+}
+
+@media (max-width: 768px) {
+  .row {
+    grid-template-columns: 1fr;
+  }
+
+  .container {
+    padding: 15px;
+  }
+}

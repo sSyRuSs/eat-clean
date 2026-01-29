@@ -71,7 +71,7 @@ export default function ProductSearch() {
               min="0"
               max="500000"
               value={priceRange[0]}
-              onChange={(e) => setPriceRange([parseInt(e.target.value) || 0, priceRange[1]])}
+              onChange={(e) => setPriceRange([Number.parseInt(e.target.value) || 0, priceRange[1]])}
               className={styles.priceInput}
               placeholder="Min"
             />
@@ -81,7 +81,7 @@ export default function ProductSearch() {
               min="0"
               max="500000"
               value={priceRange[1]}
-              onChange={(e) => setPriceRange([priceRange[0], parseInt(e.target.value) || 500000])}
+              onChange={(e) => setPriceRange([priceRange[0], Number.parseInt(e.target.value) || 500000])}
               className={styles.priceInput}
               placeholder="Max"
             />

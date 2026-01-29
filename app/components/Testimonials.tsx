@@ -71,8 +71,8 @@ export default function Testimonials() {
           {testimonials.map(testimonial => (
             <div key={testimonial.id} className={styles.card}>
               <div className={styles.rating}>
-                {[...Array(testimonial.rating)].map((_, i) => (
-                  <span key={i} className={styles.star}>⭐</span>
+                {new Array(testimonial.rating).fill(0).map((_, i) => (
+                  <span key={testimonial.id + '-' + i} className={styles.star}>⭐</span>
                 ))}
               </div>
               <p className={styles.content}>

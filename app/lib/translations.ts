@@ -164,6 +164,64 @@ export const translations = {
       subtitle: "Hình ảnh thật từ bếp Eat Clean mỗi ngày"
     },
 
+    // Calorie tracker
+    calorieTracker: {
+      title: "Tính nhanh lượng calo mỗi ngày",
+      subtitle: "Ước tính nhu cầu calo theo mục tiêu của bạn",
+      personalInfo: "Thông tin cá nhân",
+      gender: "Giới tính",
+      female: "Nữ",
+      male: "Nam",
+      weight: "Cân nặng (kg)",
+      height: "Chiều cao (cm)",
+      age: "Tuổi",
+      weightPlaceholder: "Ví dụ: 55",
+      heightPlaceholder: "Ví dụ: 165",
+      agePlaceholder: "Ví dụ: 28",
+      activity: "Mức vận động",
+      sedentary: "Ít vận động",
+      light: "Nhẹ (1-3 buổi/tuần)",
+      moderate: "Vừa (3-5 buổi/tuần)",
+      active: "Cao (6-7 buổi/tuần)",
+      goal: "Mục tiêu",
+      maintain: "Giữ cân",
+      lose: "Giảm cân",
+      gain: "Tăng cân",
+      results: "Kết quả",
+      resultTitle: "Kết quả ước tính",
+      fillForm: "Điền đầy đủ thông tin để xem kết quả",
+      maintenance: "Duy trì cân nặng",
+      daily: "Mục tiêu hàng ngày",
+      target: "Calo mục tiêu",
+      bmr: "Lượng calo bồi bổ cơ bản (BMR)",
+      save: "Lưu thông tin",
+      saved: "Đã lưu thông tin!",
+      loseNote: "Để giảm cân, hãy tiêu thụ 300 cal ít hơn mục tiêu hàng ngày",
+      gainNote: "Để tăng cân, hãy tiêu thụ 300 cal nhiều hơn mục tiêu hàng ngày",
+      maintainNote: "Để duy trì cân nặng, hãy tiêu thụ theo mục tiêu hàng ngày",
+      
+      // Meal logger
+      addMeal: "Thêm bữa ăn",
+      mealName: "Tên bữa ăn",
+      mealNamePlaceholder: "VD: Cơm gạo lứt",
+      time: "Thời gian",
+      calories: "Calories",
+      protein: "Protein",
+      carbs: "Carbs",
+      fat: "Chất béo",
+      fillRequired: "Vui lòng điền đầy đủ thông tin",
+      mealAdded: "Thêm bữa ăn thành công!",
+      
+      // Daily tracking
+      dailyTracking: "Theo dõi hôm nay",
+      meals: "Bữa ăn",
+      calorieGoal: "Mục tiêu calo",
+      remaining: "còn lại",
+      macroBreakdown: "Phân bố chất dinh dưỡng",
+      noMeals: "Chưa thêm bữa ăn nào",
+      confirmDelete: "Bạn chắc chứ?"
+    },
+
     // Blog
     blog: {
       title: "Blog Eat Clean",
@@ -350,6 +408,64 @@ export const translations = {
     gallery: {
       title: "Food gallery",
       subtitle: "Real photos from our Eat Clean kitchen"
+    },
+
+    // Calorie tracker
+    calorieTracker: {
+      title: "Daily calorie tracker",
+      subtitle: "Estimate your calorie needs based on your goal",
+      personalInfo: "Personal Information",
+      gender: "Gender",
+      female: "Female",
+      male: "Male",
+      weight: "Weight (kg)",
+      height: "Height (cm)",
+      age: "Age",
+      weightPlaceholder: "e.g. 55",
+      heightPlaceholder: "e.g. 165",
+      agePlaceholder: "e.g. 28",
+      activity: "Activity level",
+      sedentary: "Sedentary",
+      light: "Light (1-3 workouts/week)",
+      moderate: "Moderate (3-5 workouts/week)",
+      active: "Active (6-7 workouts/week)",
+      goal: "Goal",
+      maintain: "Maintain",
+      lose: "Lose weight",
+      gain: "Gain weight",
+      results: "Results",
+      resultTitle: "Estimated result",
+      fillForm: "Fill in your details to see results",
+      maintenance: "Maintenance calories",
+      daily: "Daily target",
+      target: "Target calories",
+      bmr: "Basal Metabolic Rate (BMR)",
+      save: "Save Information",
+      saved: "Information saved!",
+      loseNote: "To lose weight, consume 300 calories less than your daily target",
+      gainNote: "To gain weight, consume 300 calories more than your daily target",
+      maintainNote: "To maintain weight, consume according to your daily target",
+      
+      // Meal logger
+      addMeal: "Add Meal",
+      mealName: "Meal Name",
+      mealNamePlaceholder: "E.g.: Brown rice with salmon",
+      time: "Time",
+      calories: "Calories",
+      protein: "Protein",
+      carbs: "Carbs",
+      fat: "Fat",
+      fillRequired: "Please fill in all required fields",
+      mealAdded: "Meal added successfully!",
+      
+      // Daily tracking
+      dailyTracking: "Track Today",
+      meals: "Meals",
+      calorieGoal: "Calorie Goal",
+      remaining: "remaining",
+      macroBreakdown: "Macro Breakdown",
+      noMeals: "No meals added yet",
+      confirmDelete: "Are you sure?"
     },
 
     // Blog

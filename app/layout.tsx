@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import './globals.css'
 import { LanguageProvider } from './lib/LanguageContext'
 import { CartProvider } from './lib/CartContext'
+import { CaloriesProvider } from './context/CaloriesContext'
 import BackToTop from './components/BackToTop'
 
 export const metadata: Metadata = {
@@ -12,15 +13,17 @@ export const metadata: Metadata = {
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  readonly children: React.ReactNode
 }) {
   return (
     <html lang="vi">
       <body>
         <LanguageProvider>
           <CartProvider>
-            {children}
-            <BackToTop />
+            <CaloriesProvider>
+              {children}
+              <BackToTop />
+            </CaloriesProvider>
           </CartProvider>
         </LanguageProvider>
       </body>

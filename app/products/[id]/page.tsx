@@ -8,7 +8,7 @@ export async function generateStaticParams() {
   }))
 }
 
-export default function ProductDetail({ params }: { params: { id: string } }) {
+export default function ProductDetail({ params }: { readonly params: { readonly id: string } }) {
   const product = getProductById(params.id)
 
   if (!product) {
