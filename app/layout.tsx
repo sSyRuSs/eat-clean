@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import './globals.css'
 import { LanguageProvider } from './lib/LanguageContext'
 import { CartProvider } from './lib/CartContext'
+import BackToTop from './components/BackToTop'
 
 export const metadata: Metadata = {
   title: 'Eat Clean - Healthy Food for Life',
@@ -19,6 +20,7 @@ export default function RootLayout({
         <LanguageProvider>
           <CartProvider>
             {children}
+            <BackToTop />
           </CartProvider>
         </LanguageProvider>
       </body>

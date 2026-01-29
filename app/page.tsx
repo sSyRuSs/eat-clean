@@ -4,6 +4,8 @@ import Link from 'next/link'
 import { useLanguage } from './lib/LanguageContext'
 import Header from './components/Header'
 import Footer from './components/Footer'
+import PromoBanner from './components/PromoBanner'
+import Gallery from './components/Gallery'
 import Testimonials from './components/Testimonials'
 import FAQ from './components/FAQ'
 import Newsletter from './components/Newsletter'
@@ -29,6 +31,8 @@ export default function Home() {
           </Link>
         </section>
 
+        <PromoBanner />
+
         <section className={styles.features}>
           <div className={styles.featureCard}>
             <span className={styles.featureIcon}>🌿</span>
@@ -51,6 +55,8 @@ export default function Home() {
           <h2>{t.home.aboutTitle}</h2>
           <p>{t.home.aboutText}</p>
         </section>
+
+        <Gallery />
 
         <Testimonials />
 

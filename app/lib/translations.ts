@@ -5,7 +5,8 @@ export const translations = {
     nav: {
       home: "Trang chủ",
       products: "Sản phẩm",
-      about: "Về chúng tôi"
+      about: "Về chúng tôi",
+      blog: "Blog"
     },
     
     // Homepage
@@ -149,6 +150,32 @@ export const translations = {
       error: "Vui lòng nhập email hợp lệ"
     },
 
+    // Promo banner
+    promo: {
+      badge: "Ưu đãi hôm nay",
+      title: "Giảm 20% cho đơn từ 3 món",
+      subtitle: "Áp dụng đến hết tuần này • Freeship nội thành",
+      cta: "Xem sản phẩm"
+    },
+
+    // Gallery
+    gallery: {
+      title: "Thư viện hình ảnh món ăn",
+      subtitle: "Hình ảnh thật từ bếp Eat Clean mỗi ngày"
+    },
+
+    // Blog
+    blog: {
+      title: "Blog Eat Clean",
+      subtitle: "Chia sẻ tips, công thức và cảm hứng sống khỏe",
+      readMore: "Đọc tiếp"
+    },
+
+    // Back to top
+    backToTop: {
+      label: "Lên đầu trang"
+    },
+
     // Footer
     footer: {
       about: "Về Eat Clean",
@@ -166,7 +193,8 @@ export const translations = {
     nav: {
       home: "Home",
       products: "Products",
-      about: "About Us"
+      about: "About Us",
+      blog: "Blog"
     },
     
     // Homepage
@@ -308,6 +336,32 @@ export const translations = {
       benefit4: "First access to new products",
       success: "Thank you! Please check your email.",
       error: "Please enter a valid email"
+    },
+
+    // Promo banner
+    promo: {
+      badge: "Today only",
+      title: "20% off for orders of 3+ items",
+      subtitle: "Valid this week • Free inner-city delivery",
+      cta: "Browse products"
+    },
+
+    // Gallery
+    gallery: {
+      title: "Food gallery",
+      subtitle: "Real photos from our Eat Clean kitchen"
+    },
+
+    // Blog
+    blog: {
+      title: "Eat Clean Blog",
+      subtitle: "Tips, recipes, and healthy living inspiration",
+      readMore: "Read more"
+    },
+
+    // Back to top
+    backToTop: {
+      label: "Back to top"
     },
 
     // Footer

@@ -32,6 +32,7 @@ export default function Header() {
               <li><Link href="/" onClick={() => setMobileMenuOpen(false)}>{t.nav.home}</Link></li>
               <li><Link href="/products" onClick={() => setMobileMenuOpen(false)}>{t.nav.products}</Link></li>
               <li><Link href="/about" onClick={() => setMobileMenuOpen(false)}>{t.nav.about}</Link></li>
+              <li><Link href="/blog" onClick={() => setMobileMenuOpen(false)}>{t.nav.blog}</Link></li>
             </ul>
             <div className={styles.headerActions}>
               <div className={styles.languageSwitcher}>
