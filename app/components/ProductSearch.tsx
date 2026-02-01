@@ -4,7 +4,7 @@ import { useState, useMemo } from 'react'
 import Link from 'next/link'
 import { useLanguage } from '../lib/LanguageContext'
 import { useCart } from '../lib/CartContext'
-import { products, getProductName, getProductDescription, getProductsByMealType, MealType } from '../products/data'
+import { products, getProductName, getProductDescription, MealType } from '../products/data'
 import styles from './ProductSearch.module.css'
 
 export default function ProductSearch() {

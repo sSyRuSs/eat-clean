@@ -1,12 +1,16 @@
 'use client'
 
 import { useState } from 'react'
+import { useRouter } from 'next/navigation'
+import { useLanguage } from '../lib/LanguageContext'
 import CalorieTrackerFullPage from '@/app/components/CalorieTrackerFullPage'
 import MealLogger from '@/app/components/MealLogger'
 import TrackingDashboard from '@/app/components/TrackingDashboard'
 import styles from './calories.module.css'
 
 export default function CaloriesPage() {
+  const router = useRouter()
+  const { t } = useLanguage()
   const [currentDate, setCurrentDate] = useState<string>(
     new Date().toISOString().split('T')[0]
   )
@@ -17,6 +21,14 @@ export default function CaloriesPage() {
 
   return (
     <div className={styles.container}>
+      <button
+        type="button"
+        onClick={() => router.back()}
+        className={styles.backButton}
+      >
+        {t.calorieTracker.back}
+      </button>
+
       {/* Full Page Tracker */}
       <section className={styles.section}>
         <CalorieTrackerFullPage />

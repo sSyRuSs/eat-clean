@@ -45,8 +45,8 @@ export default function Testimonials() {
       id: 5,
       nameVi: "Hoàng Như Ý",
       nameEn: "Hoang Nhu Y",
-      contentVi: "Eat Clean giúp tôi quản lý cân nặng hiệu quả.",
-      contentEn: "Eat Clean helped me manage my weight effectively.",
+      contentVi: "Visionaries giúp tôi quản lý cân nặng hiệu quả.",
+      contentEn: "Visionaries helped me manage my weight effectively.",
       rating: 5,
       emoji: "💪"
     },

@@ -1,7 +1,7 @@
 export const translations = {
   vi: {
     // Header
-    siteName: "Eat Clean",
+    siteName: "Visionaries",
     nav: {
       home: "Trang chủ",
       products: "Sản phẩm",
@@ -20,13 +20,13 @@ export const translations = {
       feature2Desc: "Cân đối protein, carb và vitamin",
       feature3Title: "Tươi mỗi ngày",
       feature3Desc: "Chế biến và giao hàng trong ngày",
-      aboutTitle: "Tại sao chọn Eat Clean?",
+      aboutTitle: "Tại sao chọn Visionaries?",
       aboutText: "Chúng tôi cam kết mang đến những bữa ăn sạch, lành mạnh và ngon miệng nhất. Mỗi món ăn được chuẩn bị kỹ lưỡng từ nguyên liệu tươi ngon, đảm bảo an toàn vệ sinh thực phẩm và giá trị dinh dưỡng tối ưu."
     },
     
     // Products page
     products: {
-      pageTitle: "Sản phẩm Eat Clean",
+      pageTitle: "Sản phẩm Visionaries",
       pageSubtitle: "Chọn món ăn sạch yêu thích của bạn",
       viewDetails: "Xem chi tiết",
       orderNow: "Đặt món"
@@ -51,10 +51,10 @@ export const translations = {
     
     // About page
     about: {
-      pageTitle: "Về Eat Clean",
+      pageTitle: "Về Visionaries",
       pageSubtitle: "Câu chuyện của chúng tôi",
       missionTitle: "Sứ mệnh của chúng tôi",
-      missionText1: "Eat Clean được thành lập với sứ mệnh mang đến cho cộng đồng những bữa ăn sạch, lành mạnh và ngon miệng. Chúng tôi tin rằng ăn uống lành mạnh không chỉ là xu hướng mà là lối sống bền vững cho sức khỏe dài lâu.",
+      missionText1: "Visionaries được thành lập với sứ mệnh mang đến cho cộng đồng những bữa ăn sạch, lành mạnh và ngon miệng. Chúng tôi tin rằng ăn uống lành mạnh không chỉ là xu hướng mà là lối sống bền vững cho sức khỏe dài lâu.",
       missionText2: "Mỗi món ăn được chế biến từ nguyên liệu tươi ngon, organic, không chất bảo quản. Chúng tôi luôn đảm bảo cân đối dinh dưỡng với tỷ lệ protein, carb và chất béo lành mạnh phù hợp cho mỗi khẩu phần.",
       valuesTitle: "Giá trị cốt lõi",
       value1Title: "Tự nhiên",
@@ -67,7 +67,7 @@ export const translations = {
       value4Desc: "Kiểm soát nghiêm ngặt từng khâu sản xuất",
       contactTitle: "Liên hệ với chúng tôi",
       addressLabel: "Địa chỉ",
-      addressText: "123 Đường Eat Clean, Quận 1, TP.HCM",
+      addressText: "123 Đường Visionaries, Quận 1, TP.HCM",
       phoneLabel: "Điện thoại",
       phoneText: "0123 456 789",
       emailLabel: "Email",
@@ -113,13 +113,13 @@ export const translations = {
     // Testimonials
     testimonials: {
       title: "Đánh giá từ khách hàng",
-      subtitle: "Hàng ngàn khách hàng hài lòng với sản phẩm Eat Clean"
+      subtitle: "Hàng ngàn khách hàng hài lòng với sản phẩm Visionaries"
     },
 
     // FAQ
     faq: {
       title: "Câu hỏi thường gặp",
-      subtitle: "Tìm hiểu thêm về Eat Clean và các sản phẩm của chúng tôi"
+      subtitle: "Tìm hiểu thêm về Visionaries và các sản phẩm của chúng tôi"
     },
 
     // Search & Filter
@@ -167,13 +167,14 @@ export const translations = {
     // Gallery
     gallery: {
       title: "Thư viện hình ảnh món ăn",
-      subtitle: "Hình ảnh thật từ bếp Eat Clean mỗi ngày"
+      subtitle: "Hình ảnh thật từ bếp Visionaries mỗi ngày"
     },
 
     // Calorie tracker
     calorieTracker: {
       title: "Tính nhanh lượng calo mỗi ngày",
       subtitle: "Ước tính nhu cầu calo theo mục tiêu của bạn",
+      back: "← Quay lại",
       personalInfo: "Thông tin cá nhân",
       gender: "Giới tính",
       female: "Nữ",
@@ -230,7 +231,7 @@ export const translations = {
 
     // Blog
     blog: {
-      title: "Blog Eat Clean",
+      title: "Blog Visionaries",
       subtitle: "Chia sẻ tips, công thức và cảm hứng sống khỏe",
       readMore: "Đọc tiếp"
     },
@@ -242,10 +243,10 @@ export const translations = {
 
     // Footer
     footer: {
-      about: "Về Eat Clean",
+      about: "Về Visionaries",
       contact: "Liên hệ",
       followUs: "Theo dõi chúng tôi",
-      address: "123 Đường Eat Clean, Quận 1, TP.HCM",
+      address: "123 Đường Visionaries, Quận 1, TP.HCM",
       phone: "0123 456 789",
       email: "hello@eatclean.vn"
     }
@@ -253,7 +254,7 @@ export const translations = {
   
   en: {
     // Header
-    siteName: "Eat Clean",
+    siteName: "Visionaries",
     nav: {
       home: "Home",
       products: "Products",
@@ -263,7 +264,7 @@ export const translations = {
     
     // Homepage
     home: {
-      heroTitle: "Eat Clean, Live Healthy",
+      heroTitle: "Visionaries, Live Healthy",
       heroSubtitle: "High-quality eat clean food, balanced nutrition for a healthy lifestyle",
       ctaButton: "Explore Products",
       feature1Title: "100% Natural",
@@ -272,13 +273,13 @@ export const translations = {
       feature2Desc: "Balanced protein, carbs and vitamins",
       feature3Title: "Fresh Daily",
       feature3Desc: "Prepared and delivered same day",
-      aboutTitle: "Why Choose Eat Clean?",
+      aboutTitle: "Why Choose Visionaries?",
       aboutText: "We are committed to bringing the cleanest, healthiest and most delicious meals. Each dish is carefully prepared from fresh ingredients, ensuring food safety and optimal nutritional value."
     },
     
     // Products page
     products: {
-      pageTitle: "Eat Clean Products",
+      pageTitle: "Visionaries Products",
       pageSubtitle: "Choose your favorite clean meals",
       viewDetails: "View Details",
       orderNow: "Order Now"
@@ -303,10 +304,10 @@ export const translations = {
     
     // About page
     about: {
-      pageTitle: "About Eat Clean",
+      pageTitle: "About Visionaries",
       pageSubtitle: "Our Story",
       missionTitle: "Our Mission",
-      missionText1: "Eat Clean was founded with the mission to bring clean, healthy and delicious meals to the community. We believe that healthy eating is not just a trend but a sustainable lifestyle for long-term health.",
+      missionText1: "Visionaries was founded with the mission to bring clean, healthy and delicious meals to the community. We believe that healthy eating is not just a trend but a sustainable lifestyle for long-term health.",
       missionText2: "Each dish is prepared from fresh, organic ingredients without preservatives. We always ensure nutritional balance with appropriate ratios of protein, carbs and healthy fats for each portion.",
       valuesTitle: "Core Values",
       value1Title: "Natural",
@@ -319,7 +320,7 @@ export const translations = {
       value4Desc: "Strict control at every production step",
       contactTitle: "Contact Us",
       addressLabel: "Address",
-      addressText: "123 Eat Clean Street, District 1, HCMC",
+      addressText: "123 Visionaries Street, District 1, HCMC",
       phoneLabel: "Phone",
       phoneText: "0123 456 789",
       emailLabel: "Email",
@@ -365,13 +366,13 @@ export const translations = {
     // Testimonials
     testimonials: {
       title: "Customer Reviews",
-      subtitle: "Thousands of satisfied customers trust Eat Clean"
+      subtitle: "Thousands of satisfied customers trust Visionaries"
     },
 
     // FAQ
     faq: {
       title: "Frequently Asked Questions",
-      subtitle: "Find answers to common questions about Eat Clean and our products"
+      subtitle: "Find answers to common questions about Visionaries and our products"
     },
 
     // Search & Filter
@@ -419,13 +420,14 @@ export const translations = {
     // Gallery
     gallery: {
       title: "Food gallery",
-      subtitle: "Real photos from our Eat Clean kitchen"
+      subtitle: "Real photos from our Visionaries kitchen"
     },
 
     // Calorie tracker
     calorieTracker: {
       title: "Daily calorie tracker",
       subtitle: "Estimate your calorie needs based on your goal",
+      back: "← Back",
       personalInfo: "Personal Information",
       gender: "Gender",
       female: "Female",
@@ -482,7 +484,7 @@ export const translations = {
 
     // Blog
     blog: {
-      title: "Eat Clean Blog",
+      title: "Visionaries Blog",
       subtitle: "Tips, recipes, and healthy living inspiration",
       readMore: "Read more"
     },
@@ -494,10 +496,10 @@ export const translations = {
 
     // Footer
     footer: {
-      about: "About Eat Clean",
+      about: "About Visionaries",
       contact: "Contact",
       followUs: "Follow Us",
-      address: "123 Eat Clean Street, District 1, HCMC",
+      address: "123 Visionaries Street, District 1, HCMC",
       phone: "0123 456 789",
       email: "hello@eatclean.vn"
     }

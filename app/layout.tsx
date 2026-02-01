@@ -6,7 +6,7 @@ import { CaloriesProvider } from './context/CaloriesContext'
 import BackToTop from './components/BackToTop'
 
 export const metadata: Metadata = {
-  title: 'Eat Clean - Healthy Food for Life',
+  title: 'Visionaries - Healthy Food for Life',
   description: 'Premium eat clean food products for a healthy lifestyle',
 }
 

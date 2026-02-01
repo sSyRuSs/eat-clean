@@ -19,7 +19,7 @@ export default function Footer() {
         <div className={styles.content}>
           <div className={styles.section}>
             <h4>{t.footer.about}</h4>
-            <p>Eat clean every day, stay healthy always.</p>
+            <p>Visionaries every day, stay healthy always.</p>
           </div>
 
           <div className={styles.section}>
@@ -49,7 +49,7 @@ export default function Footer() {
         </div>
 
         <div className={styles.bottom}>
-          <p>&copy; 2026 Eat Clean. All rights reserved.</p>
+          <p>&copy; 2026 Visionaries. All rights reserved.</p>
         </div>
       </div>
     </footer>
