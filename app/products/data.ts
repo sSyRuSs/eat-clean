@@ -1,5 +1,7 @@
 import { Language } from '../lib/translations'
 
+export type MealType = 'breakfast' | 'dessert' | 'lunch' | 'snack'
+
 export interface Product {
   id: string
   name: {
@@ -13,6 +15,7 @@ export interface Product {
   price: string
   priceValue: number
   category: string
+  mealType: MealType
   calories: string
   emoji: string
   fullDescription: {
@@ -53,6 +56,7 @@ export const products: Product[] = [
     price: '65.000đ',
     priceValue: 65000,
     category: 'Salad',
+    mealType: 'lunch',
     calories: '350 kcal',
     emoji: '🥗',
     fullDescription: {
@@ -121,6 +125,7 @@ export const products: Product[] = [
     price: '85.000đ',
     priceValue: 85000,
     category: 'Bowl',
+    mealType: 'lunch',
     calories: '420 kcal',
     emoji: '🍱',
     fullDescription: {
@@ -189,6 +194,7 @@ export const products: Product[] = [
     price: '55.000đ',
     priceValue: 55000,
     category: 'Breakfast',
+    mealType: 'breakfast',
     calories: '280 kcal',
     emoji: '🥣',
     fullDescription: {
@@ -257,6 +263,7 @@ export const products: Product[] = [
     price: '60.000đ',
     priceValue: 60000,
     category: 'Wrap',
+    mealType: 'lunch',
     calories: '380 kcal',
     emoji: '🌯',
     fullDescription: {
@@ -325,6 +332,7 @@ export const products: Product[] = [
     price: '95.000đ',
     priceValue: 95000,
     category: 'Bowl',
+    mealType: 'lunch',
     calories: '450 kcal',
     emoji: '🍲',
     fullDescription: {
@@ -395,6 +403,7 @@ export const products: Product[] = [
     price: '45.000đ',
     priceValue: 45000,
     category: 'Beverage',
+    mealType: 'snack',
     calories: '120 kcal',
     emoji: '🥤',
     fullDescription: {
@@ -447,11 +456,412 @@ export const products: Product[] = [
       vi: [],
       en: []
     }
+  },
+  // Desserts
+  {
+    id: '7',
+    name: {
+      vi: 'Thạch Aiyu (mác búp) trái cây sốt tắc',
+      en: 'Aiyu Jelly with Fruit & Kumquat Sauce'
+    },
+    description: {
+      vi: 'Mát lạnh, thanh nhiệt, ít ngọt',
+      en: 'Refreshing, cooling, lightly sweet'
+    },
+    price: '30.000đ',
+    priceValue: 30000,
+    category: 'Dessert',
+    mealType: 'dessert',
+    calories: '120 kcal',
+    emoji: '🍧',
+    fullDescription: {
+      vi: 'Thạch Aiyu là món tráng miệng truyền thống Đài Loan với vị mát lạnh, thanh nhiệt tự nhiên. Kết hợp với trái cây tươi và sốt tắc chua chua ngọt ngào, đây là lựa chọn hoàn hảo cho những ngày nóng bức.',
+      en: 'Aiyu jelly is a traditional Taiwanese dessert with a refreshing, naturally cooling flavor. Combined with fresh fruit and tangy-sweet kumquat sauce, it is the perfect choice for hot days.'
+    },
+    ingredients: {
+      vi: ['Thạch Aiyu', 'Trái cây tươi', 'Sốt tắc', 'Nước chanh'],
+      en: ['Aiyu jelly', 'Fresh fruit', 'Kumquat sauce', 'Lemon water']
+    },
+    nutrition: {
+      protein: '1g',
+      carbs: '28g',
+      fat: '0.5g',
+      fiber: '3g'
+    },
+    benefits: {
+      vi: ['Thanh nhiệt mát lạnh', 'Hỗ trợ tiêu hóa', 'Giàu chất xơ', 'Ít calo'],
+      en: ['Cooling and refreshing', 'Supports digestion', 'High in fiber', 'Low calorie']
+    },
+    allergens: {
+      vi: [],
+      en: []
+    }
+  },
+  {
+    id: '8',
+    name: {
+      vi: 'Thạch quế hoa trân châu sữa dừa',
+      en: 'Osmanthus Jelly with Coconut Pearls'
+    },
+    description: {
+      vi: 'Thơm nhẹ, béo vừa, Á Đông hiện đại',
+      en: 'Fragrant, creamy, modern Asian'
+    },
+    price: '35.000đ',
+    priceValue: 35000,
+    category: 'Dessert',
+    mealType: 'dessert',
+    calories: '180 kcal',
+    emoji: '🧋',
+    fullDescription: {
+      vi: 'Thạch quế hoa mang hương thơm tinh tế của hoa quế Á Đông, kết hợp với trân châu mềm và sữa dừa béo ngậy. Một món tráng miệng hiện đại mang đậm dấu ấn ẩm thực Á Đông truyền thống.',
+      en: 'Osmanthus jelly brings the delicate fragrance of East Asian osmanthus flowers, combined with soft pearls and creamy coconut milk. A modern dessert with a strong mark of traditional East Asian cuisine.'
+    },
+    ingredients: {
+      vi: ['Thạch quế hoa', 'Trân châu nhỏ', 'Sữa dừa', 'Đường mía'],
+      en: ['Osmanthus jelly', 'Small pearls', 'Coconut milk', 'Cane sugar']
+    },
+    nutrition: {
+      protein: '2g',
+      carbs: '35g',
+      fat: '8g',
+      fiber: '2g'
+    },
+    benefits: {
+      vi: ['Thơm ngon dễ chịu', 'Béo vừa từ dừa', 'Ít cholesterol', 'Năng lượng tự nhiên'],
+      en: ['Pleasant fragrance', 'Moderate creaminess from coconut', 'Low cholesterol', 'Natural energy']
+    },
+    allergens: {
+      vi: [],
+      en: []
+    }
+  },
+  {
+    id: '9',
+    name: {
+      vi: 'Pudding hạt chia',
+      en: 'Chia Seed Pudding'
+    },
+    description: {
+      vi: 'Giàu chất xơ, hỗ trợ tiêu hóa',
+      en: 'Rich in fiber, supports digestion'
+    },
+    price: '30.000đ',
+    priceValue: 30000,
+    category: 'Dessert',
+    mealType: 'dessert',
+    calories: '200 kcal',
+    emoji: '🥄',
+    fullDescription: {
+      vi: 'Pudding hạt chia là món tráng miệng lành mạnh với hạt chia giàu dinh dưỡng, kết hợp sữa dừa hoặc sữa hạnh nhân nhẹ nhàng. Bổ sung trái cây tươi tạo nên một bữa ăn vừa thơm ngon vừa tốt cho sức khỏe.',
+      en: 'Chia seed pudding is a healthy dessert with nutrient-rich chia seeds, combined with light coconut or almond milk. Added fresh fruit creates a meal that is both delicious and good for health.'
+    },
+    ingredients: {
+      vi: ['Hạt chia', 'Sữa dừa/sữa hạnh nhân', 'Trái cây tươi', 'Mật ong'],
+      en: ['Chia seeds', 'Coconut/almond milk', 'Fresh fruit', 'Honey']
+    },
+    nutrition: {
+      protein: '8g',
+      carbs: '32g',
+      fat: '10g',
+      fiber: '12g'
+    },
+    benefits: {
+      vi: ['Giàu chất xơ hỗ trợ tiêu hóa', 'Omega-3 tự nhiên', 'Dễ tạo', 'Năng lượng bền vững'],
+      en: ['High fiber supports digestion', 'Natural omega-3', 'Easy to prepare', 'Sustained energy']
+    },
+    allergens: {
+      vi: ['Hạt'],
+      en: ['Nuts']
+    }
+  },
+  {
+    id: '10',
+    name: {
+      vi: 'Chè tiết yến nhựa đào',
+      en: 'Peach Gum & Snow Swallow Sweet Soup'
+    },
+    description: {
+      vi: 'Bổ dưỡng, đẹp da',
+      en: 'Nourishing, beautifying skin'
+    },
+    price: '40.000đ',
+    priceValue: 40000,
+    category: 'Dessert',
+    mealType: 'dessert',
+    calories: '220 kcal',
+    emoji: '🍲',
+    fullDescription: {
+      vi: 'Chè tiết yến nhựa đào là một trong những món chè bổ dưỡng nhất trong ẩm thực Á Đông. Kết hợp ba thành phần quý: nhựa đào, tiết yến và bồ mễ, cùng với táo đỏ tự nhiên, tạo nên một thức uống vừa thơm ngon vừa có tác dụng đẹp da.',
+      en: 'Peach gum and snow swallow sweet soup is one of the most nourishing soups in East Asian cuisine. The combination of three precious ingredients: peach gum, snow swallow and bats wing, along with natural red dates, creates a drink that is both delicious and beneficial for skin beauty.'
+    },
+    ingredients: {
+      vi: ['Nhựa đào', 'Tiết yến', 'Bồ mễ', 'Táo đỏ', 'Đường mía'],
+      en: ['Peach gum', 'Snow swallow', 'White fungus', 'Red dates', 'Cane sugar']
+    },
+    nutrition: {
+      protein: '4g',
+      carbs: '48g',
+      fat: '2g',
+      fiber: '5g'
+    },
+    benefits: {
+      vi: ['Bổ dưỡng cơ thể', 'Đẹp da tự nhiên', 'Tốt cho phổi', 'Nâng cao sức khỏe'],
+      en: ['Nourishes the body', 'Naturally beautifies skin', 'Good for lungs', 'Improves health']
+    },
+    allergens: {
+      vi: [],
+      en: []
+    }
+  },
+  {
+    id: '11',
+    name: {
+      vi: 'Thạch la hán quả sữa dừa',
+      en: 'Monk Fruit Herbal Jelly with Coconut Milk'
+    },
+    description: {
+      vi: 'Thanh lọc, ngọt tự nhiên',
+      en: 'Cleansing, naturally sweet'
+    },
+    price: '35.000đ',
+    priceValue: 35000,
+    category: 'Dessert',
+    mealType: 'dessert',
+    calories: '170 kcal',
+    emoji: '🍯',
+    fullDescription: {
+      vi: 'Thạch la hán quả với sữa dừa là một thức uống thanh lọc tuyệt vời, kết hợp giữa ngọt tự nhiên của la hán quả và tính mát lạnh của các nguyên liệu herbal. Không cần đường tinh luyện, tốt cho sức khỏe và làn da.',
+      en: 'Monk fruit jelly with coconut milk is an excellent cleansing drink, combining the natural sweetness of monk fruit and the cooling properties of herbal ingredients. No refined sugar needed, good for health and skin.'
+    },
+    ingredients: {
+      vi: ['La hán quả', 'Sung sấy', 'Dừa biển', 'Hoa cúc', 'Táo mật', 'Sữa dừa'],
+      en: ['Monk fruit', 'Dried figs', 'Seaweed', 'Chrysanthemum', 'Chinese dates', 'Coconut milk']
+    },
+    nutrition: {
+      protein: '2g',
+      carbs: '38g',
+      fat: '6g',
+      fiber: '4g'
+    },
+    benefits: {
+      vi: ['Ngọt tự nhiên không cần đường', 'Thanh lọc cơ thể', 'Tốt cho mắt', 'An toàn cho tiểu đường'],
+      en: ['Naturally sweet without sugar', 'Cleanses the body', 'Good for eyes', 'Safe for diabetics']
+    },
+    allergens: {
+      vi: [],
+      en: []
+    }
+  },
+  // Lunch
+  {
+    id: '12',
+    name: {
+      vi: 'Bún gạo lứt bò',
+      en: 'Brown Rice Vermicelli Beef Bowl'
+    },
+    description: {
+      vi: 'Nhẹ – tươi – không ngán',
+      en: 'Light, fresh, not heavy'
+    },
+    price: '55.000đ',
+    priceValue: 55000,
+    category: 'Lunch',
+    mealType: 'lunch',
+    calories: '480 kcal',
+    emoji: '🍜',
+    fullDescription: {
+      vi: 'Bún gạo lứt bò là một bữa trưa hoàn hảo với bún gạo lứt nhẹ nhàng kết hợp thịt bò nạc được nướng tuyệt vời. Kèm theo đó là rau xanh tươi và các loại rau sống, tạo nên một bữa ăn vừa nhẹ vừa thanh mát, không gây cảm giác nặng.',
+      en: 'Brown rice vermicelli beef bowl is a perfect lunch with light brown rice vermicelli combined with perfectly grilled lean beef. Accompanied by fresh greens and raw vegetables, it creates a light and refreshing meal that does not cause heaviness.'
+    },
+    ingredients: {
+      vi: ['Bún gạo lứt', 'Bò nạc nướng', 'Xà lách', 'Rau sống', 'Sốt chấm'],
+      en: ['Brown rice vermicelli', 'Grilled lean beef', 'Lettuce', 'Fresh herbs', 'Dipping sauce']
+    },
+    nutrition: {
+      protein: '38g',
+      carbs: '52g',
+      fat: '12g',
+      fiber: '8g'
+    },
+    benefits: {
+      vi: ['Protein cao từ bò', 'Carb từ gạo lứt lành mạnh', 'Vitamin từ rau sống', 'Dễ tiêu hóa', 'Cân bằng dinh dưỡng'],
+      en: ['High protein from beef', 'Healthy carbs from brown rice', 'Vitamins from fresh herbs', 'Easy to digest', 'Balanced nutrition']
+    },
+    allergens: {
+      vi: [],
+      en: []
+    }
+  },
+  {
+    id: '13',
+    name: {
+      vi: 'Cơm gạo lứt chả ức gà',
+      en: 'Brown Rice Chicken Patties Salad'
+    },
+    description: {
+      vi: 'Đạm cao, cân bằng',
+      en: 'High protein, balanced'
+    },
+    price: '60.000đ',
+    priceValue: 60000,
+    category: 'Lunch',
+    mealType: 'lunch',
+    calories: '500 kcal',
+    emoji: '🍚',
+    fullDescription: {
+      vi: 'Cơm gạo lứt chả ức gà là một bữa ăn trưa có lượng protein rất cao, với chả ức gà tươi kết hợp cơm gạo lứt bổ dưỡng. Thêm vào đó là bơ, tôm và các loại rau, tạo nên một bữa ăn cân bằng lý tưởng cho những ai tập luyện.',
+      en: 'Brown rice chicken patties salad is a lunch meal with very high protein, with fresh chicken patties combined with nutritious brown rice. Add avocado, shrimp and vegetables, creating an ideally balanced meal for those who exercise.'
+    },
+    ingredients: {
+      vi: ['Gạo lứt', 'Chả ức gà', 'Bơ', 'Tôm tươi', 'Rau sống'],
+      en: ['Brown rice', 'Chicken patties', 'Avocado', 'Fresh shrimp', 'Fresh vegetables']
+    },
+    nutrition: {
+      protein: '45g',
+      carbs: '48g',
+      fat: '14g',
+      fiber: '7g'
+    },
+    benefits: {
+      vi: ['Protein rất cao', 'Chất béo lành mạnh', 'Carb phức hợp', 'Phục hồi cơ bắp', 'Cân bằng dinh dưỡng'],
+      en: ['Very high protein', 'Healthy fats', 'Complex carbs', 'Muscle recovery', 'Balanced nutrition']
+    },
+    allergens: {
+      vi: ['Tôm'],
+      en: ['Shrimp']
+    }
+  },
+  {
+    id: '14',
+    name: {
+      vi: 'Cơm cá hồi sốt mè nhạt',
+      en: 'Salmon Rice Bowl'
+    },
+    description: {
+      vi: 'Healthy everyday meal',
+      en: 'Healthy everyday meal'
+    },
+    price: '65.000đ',
+    priceValue: 65000,
+    category: 'Lunch',
+    mealType: 'lunch',
+    calories: '520 kcal',
+    emoji: '🍱',
+    fullDescription: {
+      vi: 'Cơm cá hồi sốt mè nhạt là một bữa ăn trưa lành mạnh hàng ngày, với cá hồi tươi đầy đủ Omega-3 kết hợp cơm trắng. Kèm theo là đậu, cà chua bi tươi và sốt mè nhạt thơm ngon, tạo nên một bữa ăn cân bằng và bổ dưỡng.',
+      en: 'Salmon rice bowl with light sesame sauce is a healthy everyday meal, with fresh salmon full of Omega-3 combined with white rice. Accompanied by beans, fresh cherry tomatoes and delicious light sesame sauce, it creates a balanced and nutritious meal.'
+    },
+    ingredients: {
+      vi: ['Cơm', 'Cá hồi tươi', 'Đậu', 'Cà chua bi', 'Sốt mè nhạt'],
+      en: ['Rice', 'Fresh salmon', 'Beans', 'Cherry tomatoes', 'Light sesame sauce']
+    },
+    nutrition: {
+      protein: '42g',
+      carbs: '50g',
+      fat: '16g',
+      fiber: '6g'
+    },
+    benefits: {
+      vi: ['Omega-3 từ cá hồi', 'Protein cao', 'Vitamin và khoáng chất', 'Tốt cho tim mạch', 'Nuôi dưỡng cơ thể'],
+      en: ['Omega-3 from salmon', 'High protein', 'Vitamins and minerals', 'Good for heart', 'Nourishes the body']
+    },
+    allergens: {
+      vi: ['Cá', 'Mè'],
+      en: ['Fish', 'Sesame']
+    }
+  },
+  // Breakfast
+  {
+    id: '15',
+    name: {
+      vi: 'Bánh mì nguyên cám bơ Địa Trung Hải',
+      en: 'Mediterranean Avocado Toast'
+    },
+    description: {
+      vi: 'Bánh mì nguyên cám phủ bơ nghiền, cà chua bi và olive',
+      en: 'Whole wheat bread topped with mashed avocado, cherry tomatoes and olives'
+    },
+    price: '45.000đ',
+    priceValue: 45000,
+    category: 'Breakfast',
+    mealType: 'breakfast',
+    calories: '350 kcal',
+    emoji: '🥪',
+    fullDescription: {
+      vi: 'Bánh mì nguyên cám bơ theo phong cách Địa Trung Hải là bữa sáng lý tưởng với bánh mì nguyên cám giàu chất xơ, phủ lên đó là bơ mềm, cà chua bi tươi và olive thơm ngon. Một bữa sáng vừa đơn giản vừa đầy dinh dưỡng.',
+      en: 'Mediterranean-style avocado whole wheat bread is an ideal breakfast with whole grain bread rich in fiber, topped with soft avocado, fresh cherry tomatoes and fragrant olives. A breakfast that is both simple and full of nutrition.'
+    },
+    ingredients: {
+      vi: ['Bánh mì nguyên cám', 'Bơ chín', 'Cà chua bi', 'Olive', 'Cà cà chua'],
+      en: ['Whole wheat bread', 'Ripe avocado', 'Cherry tomatoes', 'Olives', 'Tomato paste']
+    },
+    nutrition: {
+      protein: '12g',
+      carbs: '42g',
+      fat: '14g',
+      fiber: '8g'
+    },
+    benefits: {
+      vi: ['Whole grain tốt cho tiêu hóa', 'Chất béo lành mạnh từ bơ', 'Vitamin C từ cà chua', 'Năng lượng bền vững', 'Dễ chuẩn bị'],
+      en: ['Whole grain good for digestion', 'Healthy fats from avocado', 'Vitamin C from tomatoes', 'Sustained energy', 'Easy to prepare']
+    },
+    allergens: {
+      vi: ['Gluten'],
+      en: ['Gluten']
+    }
+  },
+  {
+    id: '16',
+    name: {
+      vi: 'Sữa chua Hy Lạp hạt dinh dưỡng',
+      en: 'Greek Yogurt Nut Bowl'
+    },
+    description: {
+      vi: 'Sữa chua Hy Lạp kết hợp hạt và mật ong tự nhiên',
+      en: 'Greek yogurt combined with nuts and natural honey'
+    },
+    price: '40.000đ',
+    priceValue: 40000,
+    category: 'Breakfast',
+    mealType: 'breakfast',
+    calories: '280 kcal',
+    emoji: '🥛',
+    fullDescription: {
+      vi: 'Sữa chua Hy Lạp hạt dinh dưỡng là bữa sáng hoàn hảo với sữa chua Hy Lạp mà bổ dưỡng, kết hợp với hạnh nhân, óc chó và mật ong tự nhiên. Một bữa sáng giàu protein, vitamin và năng lượng tự nhiên.',
+      en: 'Greek yogurt nut bowl is a perfect breakfast with nutritious Greek yogurt, combined with almonds, walnuts and natural honey. A breakfast rich in protein, vitamins and natural energy.'
+    },
+    ingredients: {
+      vi: ['Sữa chua Hy Lạp', 'Hạnh nhân', 'Óc chó', 'Mật ong', 'Trái cây tươi'],
+      en: ['Greek yogurt', 'Almonds', 'Walnuts', 'Honey', 'Fresh fruit']
+    },
+    nutrition: {
+      protein: '15g',
+      carbs: '35g',
+      fat: '10g',
+      fiber: '6g'
+    },
+    benefits: {
+      vi: ['Protein cao từ sữa chua', 'Chất béo lành mạnh từ hạt', 'Probiotics tốt cho đường ruột', 'Calcium cho xương chắc khỏe', 'Năng lượng bền vững'],
+      en: ['High protein from yogurt', 'Healthy fats from nuts', 'Probiotics good for gut', 'Calcium for strong bones', 'Sustained energy']
+    },
+    allergens: {
+      vi: ['Hạt', 'Sữa'],
+      en: ['Nuts', 'Dairy']
+    }
   }
 ]
 
 export function getProductById(id: string): Product | undefined {
   return products.find(p => p.id === id)
+}
+
+export function getProductsByMealType(mealType: MealType): Product[] {
+  return products.filter(p => p.mealType === mealType)
+}
+
+export function getProductsByCategory(category: string): Product[] {
+  return products.filter(p => p.category === category)
 }
 
 export function getProductName(product: Product, lang: Language): string {

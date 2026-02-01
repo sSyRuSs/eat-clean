@@ -232,6 +232,60 @@
   box-shadow: 0 4px 12px rgba(168, 230, 163, 0.35);
 }
 
+.mealTypeTabs {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.mealTypeTab {
+  padding: 0.75rem 1rem;
+  background: white;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  color: #2d5016;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-size: 0.9rem;
+  text-align: left;
+}
+
+.mealTypeTab:hover {
+  border-color: #A8E6A3;
+  background-color: #f5f5f5;
+}
+
+.mealTypeTab.active {
+  background: linear-gradient(135deg, #A8E6A3 0%, #90d88b 100%);
+  color: white;
+  border-color: #90d88b;
+  box-shadow: 0 2px 8px rgba(168, 230, 163, 0.3);
+}
+
+.mealTypeSection {
+  margin-bottom: 3rem;
+}
+
+.sectionDivider {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  padding: 1.5rem 0;
+  border-top: 2px solid #e0e0e0;
+  border-bottom: 2px solid #A8E6A3;
+}
+
+.sectionTitle {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #2d5016;
+  font-weight: 700;
+  text-transform: capitalize;
+  letter-spacing: 0.5px;
+}
+
 @media (max-width: 1024px) {
   .container {
     grid-template-columns: 1fr;
@@ -248,6 +302,18 @@
 
   .filterGroup {
     margin-bottom: 0;
+  }
+
+  .mealTypeTabs {
+    grid-column: 1 / -1;
+    flex-direction: row;
+    gap: 0.5rem;
+  }
+
+  .mealTypeTab {
+    flex: 1;
+    text-align: center;
+    padding: 0.65rem 0.75rem;
   }
 
   .resetButton {
@@ -275,6 +341,15 @@
 
   .filterGroup {
     margin-bottom: 0;
+  }
+
+  .mealTypeTabs {
+    gap: 0.5rem;
+  }
+
+  .mealTypeTab {
+    padding: 0.65rem 0.75rem;
+    font-size: 0.85rem;
   }
 
   .grid {
@@ -315,5 +390,13 @@
 
   .price {
     font-size: 1.1rem;
+  }
+
+  .sectionTitle {
+    font-size: 1.2rem;
+  }
+
+  .sectionDivider {
+    padding: 1rem 0;
   }
 }
