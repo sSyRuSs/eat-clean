@@ -71,7 +71,7 @@ export const translations = {
       phoneLabel: "Điện thoại",
       phoneText: "0123 456 789",
       emailLabel: "Email",
-      emailText: "hello@eatclean.vn"
+      emailText: "us@visionaries.vn"
     },
     
     // Cart
@@ -248,7 +248,7 @@ export const translations = {
       followUs: "Theo dõi chúng tôi",
       address: "123 Đường Visionaries, Quận 1, TP.HCM",
       phone: "0123 456 789",
-      email: "hello@eatclean.vn"
+      email: "us@visionaries.vn"
     }
   },
   
@@ -324,7 +324,7 @@ export const translations = {
       phoneLabel: "Phone",
       phoneText: "0123 456 789",
       emailLabel: "Email",
-      emailText: "hello@eatclean.vn"
+      emailText: "us@visionaries.vn"
     },
     
     // Cart
@@ -501,7 +501,7 @@ export const translations = {
       followUs: "Follow Us",
       address: "123 Visionaries Street, District 1, HCMC",
       phone: "0123 456 789",
-      email: "hello@eatclean.vn"
+      email: "us@visionaries.vn"
     }
   }
 }

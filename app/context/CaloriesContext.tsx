@@ -58,37 +58,51 @@ export const CaloriesProvider: React.FC<{ children: React.ReactNode }> = ({ chil
   const [dailyTrackings, setDailyTrackings] = useState<DailyTracking[]>([])
   const [currentDate] = useState<string>(new Date().toISOString().split('T')[0])
   const [bmrData, setBmrData] = useState<any>(null)
+  const [isLoading, setIsLoading] = useState(true)
 
-  // Load from localStorage on mount
+  // Load from localStorage on mount (client-side only)
   useEffect(() => {
-    const saved = localStorage.getItem('caloriesData')
-    const savedBmr = localStorage.getItem('bmrData')
-    if (saved) {
-      try {
+    if (typeof window === 'undefined') return
+    
+    try {
+      const saved = localStorage.getItem('caloriesData')
+      const savedBmr = localStorage.getItem('bmrData')
+      
+      if (saved) {
         setDailyTrackings(JSON.parse(saved))
-      } catch (e) {
-        console.error('Failed to load calories data:', e)
       }
-    }
-    if (savedBmr) {
-      try {
+      if (savedBmr) {
         setBmrData(JSON.parse(savedBmr))
-      } catch (e) {
-        console.error('Failed to load BMR data:', e)
       }
+    } catch (e) {
+      console.error('Failed to load data from localStorage:', e)
+    } finally {
+      setIsLoading(false)
     }
   }, [])
 
   // Save to localStorage whenever data changes
   useEffect(() => {
-    localStorage.setItem('caloriesData', JSON.stringify(dailyTrackings))
-  }, [dailyTrackings])
+    if (typeof window === 'undefined' || isLoading) return
+    
+    try {
+      localStorage.setItem('caloriesData', JSON.stringify(dailyTrackings))
+    } catch (e) {
+      console.error('Failed to save calories data:', e)
+    }
+  }, [dailyTrackings, isLoading])
 
   useEffect(() => {
-    if (bmrData) {
-      localStorage.setItem('bmrData', JSON.stringify(bmrData))
+    if (typeof window === 'undefined' || isLoading) return
+    
+    try {
+      if (bmrData) {
+        localStorage.setItem('bmrData', JSON.stringify(bmrData))
+      }
+    } catch (e) {
+      console.error('Failed to save BMR data:', e)
     }
-  }, [bmrData])
+  }, [bmrData, isLoading])
 
   const addMeal = (meal: Meal) => {
     setDailyTrackings((prev) => {
