@@ -61,7 +61,7 @@ export const products: Product[] = [
     mealType: 'breakfast',
     calories: '320 kcal',
     emoji: '🥛',
-    image: '/images/breakfast/greek-yogurt-fruits-nuts.jpg',
+    image: 'https://images.unsplash.com/photo-1488477181946-6428a0291777?ixlib=rb-4.0.3&w=800&fit=crop',
     fullDescription: {
       vi: 'Sữa chua Hy Lạp trái cây hạt là bữa sáng hoàn hảo với sữa chua Hy Lạp nguyên chất giàu protein và probiotics. Kết hợp với hạnh nhân, óc chó giàu chất béo lành mạnh, quả mọng tươi chứa đầy chất chống oxy hóa và mật ong tự nhiên ngọt dịu. Món ăn sáng lý tưởng cho người muốn khởi đầu ngày mới đầy năng lượng.',
       en: 'Greek yogurt with fruits and nuts is the perfect breakfast with pure Greek yogurt rich in protein and probiotics. Combined with almonds and walnuts rich in healthy fats, fresh berries full of antioxidants and natural honey with gentle sweetness. The ideal breakfast meal for those who want to start the day full of energy.'
@@ -133,7 +133,7 @@ export const products: Product[] = [
     mealType: 'breakfast',
     calories: '420 kcal',
     emoji: '🍳',
-    image: '/images/breakfast/egg-roll-barley-rice.jpg',
+    image: 'https://images.unsplash.com/photo-1525351484163-7529414344d8?ixlib=rb-4.0.3&w=800&fit=crop',
     fullDescription: {
       vi: 'Trứng cuộn ăn kèm cơm đại mạch là bữa sáng đầy đủ dinh dưỡng với trứng cuộn nhồi đầy rau củ tươi, kết hợp cơm đại mạch giàu chất xơ và rau củ hấp nhiều màu sắc. Món ăn mang phong cách Á Đông hiện đại, cân bằng giữa protein, carb phức hợp và vitamin.',
       en: 'Egg roll with barley rice is a nutritionally complete breakfast with egg roll stuffed with fresh vegetables, combined with fiber-rich barley rice and colorful steamed vegetables. A modern Asian-style dish, balanced between protein, complex carbs and vitamins.'
@@ -203,7 +203,7 @@ export const products: Product[] = [
     mealType: 'breakfast',
     calories: '380 kcal',
     emoji: '🍙',
-    image: '/images/breakfast/beef-kimbap.jpg',
+    image: 'https://images.unsplash.com/photo-1553621042-f6e147245754?ixlib=rb-4.0.3&w=800&fit=crop',
     fullDescription: {
       vi: 'Kimbap bò rau củ là món ăn sáng tiện lợi theo phong cách Hàn Quốc với cơm trắng cuộn rong biển, nhồi thịt bò nạc, trứng, cà rốt và dưa leo. Dễ ăn, dễ mang theo và đầy đủ dinh dưỡng cho buổi sáng bận rộn.',
       en: 'Beef vegetable kimbap is a convenient Korean-style breakfast with white rice rolled in seaweed, stuffed with lean beef, eggs, carrots and cucumber. Easy to eat, easy to carry and fully nutritious for a busy morning.'
@@ -273,7 +273,7 @@ export const products: Product[] = [
     mealType: 'breakfast',
     calories: '360 kcal',
     emoji: '🥪',
-    image: '/images/breakfast/mediterranean-avocado-toast.jpg',
+    image: 'https://images.unsplash.com/photo-1541519227354-08fa5d50c44d?ixlib=rb-4.0.3&w=800&fit=crop',
     fullDescription: {
       vi: 'Bánh mì nguyên cám bơ Địa Trung Hải là bữa sáng theo phong cách Mediterranean với bánh mì whole grain giàu chất xơ, phủ bơ mềm, cà chua bi tươi và phô mai feta. Một bữa sáng đơn giản nhưng đầy hương vị và dinh dưỡng.',
       en: 'Mediterranean avocado whole wheat toast is a Mediterranean-style breakfast with fiber-rich whole grain bread, topped with soft avocado, fresh cherry tomatoes and feta cheese. A simple but flavorful and nutritious breakfast.'
@@ -343,7 +343,7 @@ export const products: Product[] = [
     mealType: 'lunch',
     calories: '480 kcal',
     emoji: '🍜',
-    image: '/images/lunch/brown-rice-vermicelli-beef.jpg',
+    image: 'https://images.unsplash.com/photo-1569562211093-4ed0d0758f12?ixlib=rb-4.0.3&w=800&fit=crop',
     fullDescription: {
       vi: 'Bún gạo lứt bò là món ăn trưa hoàn hảo kết hợp giữa bún gạo lứt giàu chất xơ, thịt bò nướng mềm ngon và rau sống tươi mát. Với sốt trộn đặc biệt từ nước mắm, chanh và tỏi, món ăn mang hương vị Việt Nam đích thực nhưng lành mạnh và ít calo.',
       en: 'Brown rice vermicelli with beef is the perfect lunch combining fiber-rich brown rice vermicelli, tender grilled beef and fresh herbs. With special dressing from fish sauce, lemon and garlic, the dish brings authentic Vietnamese flavors but healthy and low calorie.'
@@ -413,7 +413,7 @@ export const products: Product[] = [
     mealType: 'lunch',
     calories: '520 kcal',
     emoji: '🍱',
-    image: '/images/lunch/salmon-poke-bowl.jpg',
+    image: 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-4.0.3&w=800&fit=crop',
     fullDescription: {
       vi: 'Cơm cá hồi poke bowl là món ăn trưa cao cấp theo phong cách Hawaii với cá hồi tươi sống chất lượng cao, cơm Nhật dẻo thơm, đậu edamame giòn ngọt và bơ béo ngậy. Được bổ sung rau xanh tươi và sốt đặc biệt, đây là bữa ăn hoàn hảo cho sức khỏe và hương vị.',
       en: 'Salmon poke bowl is a premium Hawaiian-style lunch with high-quality fresh raw salmon, fragrant sticky Japanese rice, crispy sweet edamame and creamy avocado. Added with fresh greens and special sauce, this is the perfect meal for health and flavor.'
@@ -483,7 +483,7 @@ export const products: Product[] = [
     mealType: 'lunch',
     calories: '495 kcal',
     emoji: '🍚',
-    image: '/images/lunch/grilled-chicken-brown-rice.jpg',
+    image: 'https://images.pexels.com/photos/6419717/pexels-photo-6419717.jpeg?auto=compress&cs=tinysrgb&w=800',
     fullDescription: {
       vi: 'Cơm gạo lứt ức gà nướng là bữa trưa cân bằng hoàn hảo với ức gà nướng giàu protein, gạo lứt cung cấp carb phức hợp và salad rau củ tươi đa dạng. Món ăn lý tưởng cho người tập gym, vận động viên hoặc bất kỳ ai muốn duy trì lối sống lành mạnh.',
       en: 'Grilled chicken bowl with brown rice is a perfectly balanced lunch with protein-rich grilled chicken breast, brown rice providing complex carbs and diverse fresh vegetable salad. The ideal meal for gym-goers, athletes or anyone who wants to maintain a healthy lifestyle.'
@@ -553,7 +553,7 @@ export const products: Product[] = [
     mealType: 'lunch',
     calories: '420 kcal',
     emoji: '🌯',
-    image: '/images/lunch/beef-spring-rolls.jpg',
+    image: 'https://images.pexels.com/photos/2323398/pexels-photo-2323398.jpeg?auto=compress&cs=tinysrgb&w=800',
     fullDescription: {
       vi: 'Gỏi cuốn bò bún lứt là món ăn nhẹ nhàng nhưng đầy đủ dinh dưỡng với bánh tráng gạo cuộn thịt bò nướng, bún gạo lứt và rau sống tươi mát. Kèm theo sốt đậu phộng béo ngậy, đây là bữa trưa lý tưởng cho ngày hè hoặc khi muốn ăn nhẹ nhưng vẫn no lâu.',
       en: 'Beef brown rice vermicelli spring rolls are a light but nutritious meal with rice paper rolled with grilled beef, brown rice vermicelli and fresh herbs. Served with creamy peanut sauce, this is the ideal lunch for summer days or when you want to eat light but still stay full longer.'
@@ -621,7 +621,7 @@ export const products: Product[] = [
     mealType: 'lunch',
     calories: '465 kcal',
     emoji: '🍜',
-    image: '/images/lunch/cold-soba-beef.jpg',
+    image: 'https://images.unsplash.com/photo-1618841557871-b4664fbf0cb3?ixlib=rb-4.0.3&w=800&fit=crop',
     fullDescription: {
       vi: 'Mì soba bò lạnh là món ăn Nhật Bản thanh mát với mì soba làm từ kiều mạch giàu dinh dưỡng, thịt bò xào thơm ngon và rau sống tươi giòn. Được chấm với sốt mè đậm đà, món ăn mang lại cảm giác sảng khoái, hoàn hảo cho những ngày nóng.',
       en: 'Cold soba noodles with beef is a refreshing Japanese dish with nutritious buckwheat soba noodles, delicious stir-fried beef and crispy fresh vegetables. Dipped in rich sesame sauce, the dish brings a refreshing feeling, perfect for hot days.'
@@ -691,7 +691,7 @@ export const products: Product[] = [
     mealType: 'lunch',
     calories: '380 kcal',
     emoji: '🐟',
-    image: '/images/lunch/steamed-fish-asparagus.jpg',
+    image: 'https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?ixlib=rb-4.0.3&w=800&fit=crop',
     fullDescription: {
       vi: 'Cá hấp măng tây nước tương là món ăn nhẹ nhàng, ít dầu mỡ nhưng vẫn đầy hương vị. Cá phi lê trắng mềm mại được hấp cùng măng tây giòn ngọt, rưới nước tương gừng thơm nồng. Món ăn lành mạnh, giàu protein và ít calo, phù hợp cho mọi lứa tuổi.',
       en: 'Steamed fish with asparagus in soy sauce is a light, low-fat dish but still full of flavor. Soft white fish fillet steamed with crispy sweet asparagus, drizzled with fragrant ginger soy sauce. A healthy meal, rich in protein and low in calories, suitable for all ages.'
@@ -761,7 +761,7 @@ export const products: Product[] = [
     mealType: 'dessert',
     calories: '250 kcal',
     emoji: '🥄',
-    image: '/images/dessert/chia-pudding.jpg',
+    image: 'https://images.unsplash.com/photo-1623428454614-abaf00244e52?ixlib=rb-4.0.3&w=800&fit=crop',
     fullDescription: {
       vi: 'Pudding hạt chia là món tráng miệng lành mạnh với hạt chia giàu omega-3 và chất xơ, ngâm trong sữa dừa thơm béo. Được trang trí với xoài tươi ngọt, quả mọng và granola giòn, đây là món tráng miệng vừa ngon vừa bổ dưỡng.',
       en: 'Chia seed pudding is a healthy dessert with chia seeds rich in omega-3 and fiber, soaked in fragrant creamy coconut milk. Decorated with sweet fresh mango, berries and crispy granola, this is a dessert that is both delicious and nutritious.'
@@ -827,7 +827,7 @@ export const products: Product[] = [
     mealType: 'dessert',
     calories: '180 kcal',
     emoji: '🍯',
-    image: '/images/dessert/monk-fruit-jelly.png',
+    image: 'https://images.pexels.com/photos/7937477/pexels-photo-7937477.jpeg?auto=compress&cs=tinysrgb&w=800',
     fullDescription: {
       vi: 'Thạch la hán quả sữa dừa là món chè thanh mát với thạch từ la hán quả ngọt tự nhiên, kết hợp sữa dừa béo ngậy và trái cây nhiệt đới tươi ngon. Món tráng miệng lành mạnh không cần đường tinh luyện, phù hợp cho người ăn kiêng và người tiểu đường.',
       en: 'Monk fruit herbal jelly with coconut milk is a refreshing dessert with jelly from naturally sweet monk fruit, combined with creamy coconut milk and delicious tropical fruits. A healthy dessert without refined sugar, suitable for dieters and diabetics.'
@@ -895,7 +895,7 @@ export const products: Product[] = [
     mealType: 'dessert',
     calories: '160 kcal',
     emoji: '🍧',
-    image: '/images/dessert/aiyu-jelly-fruits.jpg',
+    image: 'https://images.pexels.com/photos/1132558/pexels-photo-1132558.jpeg?auto=compress&cs=tinysrgb&w=800',
     fullDescription: {
       vi: 'Thạch mác búp trái cây là món tráng miệng Đài Loan truyền thống với thạch aiyu mát lạnh tự nhiên, kết hợp với xoài ngọt, dâu tươi và kiwi chua nhẹ. Sốt kumquat chua ngọt hài hòa tạo nên món tráng miệng thanh mát, lành mạnh hoàn hảo cho mùa hè.',
       en: 'Aiyu jelly with tropical fruits is a traditional Taiwanese dessert with naturally cooling aiyu jelly, combined with sweet mango, fresh strawberries and slightly sour kiwi. Harmonious sweet and sour kumquat sauce creates a refreshing, perfectly healthy dessert for summer.'
@@ -963,7 +963,7 @@ export const products: Product[] = [
     mealType: 'dessert',
     calories: '220 kcal',
     emoji: '🧋',
-    image: '/images/dessert/osmanthus-jelly-pearls.jpg',
+    image: 'https://images.pexels.com/photos/1435706/pexels-photo-1435706.jpeg?auto=compress&cs=tinysrgb&w=800',
     fullDescription: {
       vi: 'Thạch quế hoa sữa dừa trân châu là món tráng miệng Á Đông hiện đại với hương thơm tinh tế của hoa quế, kết hợp sữa dừa béo ngậy, trân châu mềm dai và thạch đen thanh mát. Một món tráng miệng độc đáo, vừa truyền thống vừa hiện đại.',
       en: 'Osmanthus jelly with coconut milk and pearls is a modern Asian dessert with the delicate fragrance of osmanthus flowers, combined with creamy coconut milk, soft chewy pearls and refreshing grass jelly. A unique dessert, both traditional and modern.'
@@ -1029,7 +1029,7 @@ export const products: Product[] = [
     mealType: 'dessert',
     calories: '200 kcal',
     emoji: '🍲',
-    image: '/images/dessert/peach-gum-sweet-soup.png',
+    image: 'https://images.pexels.com/photos/8477970/pexels-photo-8477970.jpeg?auto=compress&cs=tinysrgb&w=800',
     fullDescription: {
       vi: 'Chè tiết yến nhựa đào là món chè dưỡng nhan cao cấp với ba thành phần quý: nhựa đào, tiết yến và bồ mễ, kết hợp với táo đỏ và hạt sen bổ dưỡng. Món chè này không chỉ ngon mà còn có tác dụng làm đẹp da, bổ phổi và tăng cường sức khỏe.',
       en: 'Peach gum and snow swallow sweet soup is a premium beauty-enhancing dessert with three precious ingredients: peach gum, snow swallow and white fungus, combined with nutritious red dates and lotus seeds. This dessert is not only delicious but also has the effect of beautifying skin, nourishing lungs and improving health.'
