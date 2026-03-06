@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 import { useLanguage } from '@/app/lib/LanguageContext'
 import { useCart } from '@/app/lib/CartContext'
 import Header from '@/app/components/Header'
@@ -29,6 +30,20 @@ export default function ProductDetailClient({ product }: ProductDetailClientProp
         <Link href="/products" className={styles.backLink}>
           {t.productDetail.backToProducts}
         </Link>
+
+        {product.image && (
+          <div className={styles.productImageContainer}>
+            <Image
+              src={product.image}
+              alt={getProductName(product, language)}
+              width={800}
+              height={500}
+              className={styles.productHeroImage}
+              priority
+              style={{ objectFit: 'cover' }}
+            />
+          </div>
+        )}
 
         <div className={styles.productHeader}>
           <div className={styles.productEmoji}>{product.emoji}</div>

@@ -19,6 +19,23 @@
   transform: translateX(-5px);
 }
 
+/* Product Image */
+.productImageContainer {
+  width: 100%;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  margin-bottom: 2rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.productHeroImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 /* Product Header */
 .productHeader {
   background: linear-gradient(135deg, var(--light-green) 0%, var(--pastel-green) 100%);

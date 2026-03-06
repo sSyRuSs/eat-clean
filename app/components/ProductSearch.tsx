@@ -2,6 +2,7 @@
 
 import { useState, useMemo } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { useLanguage } from '../lib/LanguageContext'
 import { useCart } from '../lib/CartContext'
 import { products, getProductName, getProductDescription, MealType } from '../products/data'
@@ -74,9 +75,23 @@ export default function ProductSearch() {
         <div className={styles.grid}>
           {products.map(product => (
             <div key={product.id} className={styles.card}>
-              <Link href={`/products/${product.id}`} className={styles.cardHeader}>
-                <span className={styles.emoji}>{product.emoji}</span>
-                <h3>{getProductName(product, language)}</h3>
+              <Link href={`/products/${product.id}`} className={styles.cardLink}>
+                {product.image && (
+                  <div className={styles.imageContainer}>
+                    <Image
+                      src={product.image}
+                      alt={getProductName(product, language)}
+                      width={400}
+                      height={300}
+                      className={styles.productImage}
+                      style={{ objectFit: 'cover' }}
+                    />
+                  </div>
+                )}
+                <div className={styles.cardHeader}>
+                  <span className={styles.emoji}>{product.emoji}</span>
+                  <h3>{getProductName(product, language)}</h3>
+                </div>
               </Link>
               <p className={styles.description}>
                 {getProductDescription(product, language)}
