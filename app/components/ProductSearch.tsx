@@ -2,7 +2,6 @@
 
 import { useState, useMemo } from 'react'
 import Link from 'next/link'
-import Image from 'next/image'
 import { useLanguage } from '../lib/LanguageContext'
 import { useCart } from '../lib/CartContext'
 import { products, getProductName, getProductDescription, MealType } from '../products/data'
@@ -78,13 +77,10 @@ export default function ProductSearch() {
               <Link href={`/products/${product.id}`} className={styles.cardLink}>
                 {product.image && (
                   <div className={styles.imageContainer}>
-                    <Image
+                    <img
                       src={product.image}
                       alt={getProductName(product, language)}
-                      width={400}
-                      height={300}
                       className={styles.productImage}
-                      style={{ objectFit: 'cover' }}
                     />
                     <div className={styles.imageOverlay}>
                       <h3 className={styles.overlayTitle}>{getProductName(product, language)}</h3>

@@ -1,7 +1,6 @@
 'use client'
 
 import Link from 'next/link'
-import Image from 'next/image'
 import { useLanguage } from '@/app/lib/LanguageContext'
 import { useCart } from '@/app/lib/CartContext'
 import Header from '@/app/components/Header'
@@ -33,14 +32,10 @@ export default function ProductDetailClient({ product }: ProductDetailClientProp
 
         {product.image && (
           <div className={styles.productImageContainer}>
-            <Image
+            <img
               src={product.image}
               alt={getProductName(product, language)}
-              width={800}
-              height={500}
               className={styles.productHeroImage}
-              priority
-              style={{ objectFit: 'cover' }}
             />
           </div>
         )}
