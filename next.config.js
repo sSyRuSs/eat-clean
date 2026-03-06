@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
-  // basePath: '/eat-clean', // Commented for development
+  basePath: '/eat-clean',
   images: {
     unoptimized: true,
   },
