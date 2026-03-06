@@ -86,16 +86,15 @@ export default function ProductSearch() {
                       className={styles.productImage}
                       style={{ objectFit: 'cover' }}
                     />
+                    <div className={styles.imageOverlay}>
+                      <h3 className={styles.overlayTitle}>{getProductName(product, language)}</h3>
+                      <p className={styles.overlayDescription}>
+                        {getProductDescription(product, language)}
+                      </p>
+                    </div>
                   </div>
                 )}
-                <div className={styles.cardHeader}>
-                  <span className={styles.emoji}>{product.emoji}</span>
-                  <h3>{getProductName(product, language)}</h3>
-                </div>
               </Link>
-              <p className={styles.description}>
-                {getProductDescription(product, language)}
-              </p>
               <div className={styles.cardFooter}>
                 <span className={styles.price}>{product.price}</span>
                 <button
