@@ -213,28 +213,31 @@
 
 /* Order Section */
 .orderSection {
-  background: linear-gradient(135deg, var(--pastel-green) 0%, var(--dark-green) 100%);
+  background: linear-gradient(135deg, #FFBF00 0%, #FFD166 50%, #C8B8DB 100%);
   padding: 2.5rem;
   border-radius: 20px;
   text-align: center;
   margin-bottom: 3rem;
+  box-shadow: 0 8px 24px rgba(255, 191, 0, 0.4);
 }
 
 .orderButton {
   background: var(--white);
-  color: var(--dark-green);
+  color: #FF8C00;
   padding: 1.25rem 3rem;
   border-radius: 50px;
   font-size: 1.2rem;
   font-weight: 700;
   transition: all 0.3s;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
   margin-bottom: 1rem;
 }
 
 .orderButton:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.18);
+  background: linear-gradient(135deg, #FFFEF9 0%, #FFF9E6 100%);
+  color: #FF7A00;
 }
 
 .deliveryInfo {

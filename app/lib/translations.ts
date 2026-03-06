@@ -1,7 +1,7 @@
 export const translations = {
   vi: {
     // Header
-    siteName: "Visionaries",
+    siteName: "VISIONARIES",
     nav: {
       home: "Trang chủ",
       products: "Sản phẩm",
@@ -254,7 +254,7 @@ export const translations = {
   
   en: {
     // Header
-    siteName: "Visionaries",
+    siteName: "VISIONARIES",
     nav: {
       home: "Home",
       products: "Products",

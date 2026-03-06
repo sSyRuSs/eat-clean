@@ -1,7 +1,19 @@
 :root {
+  /* Main Green Colors */
   --pastel-green: #A8E6A3;
   --dark-green: #6DB86B;
   --light-green: #D4F1D2;
+  
+  /* Amber Dusk Palette */
+  --amber-gold: #FFBF00;
+  --golden-amber: #FFB347;
+  --warm-amber: #FF9500;
+  --dusk-purple: #C8B8DB;
+  --honey-glow: #FFD166;
+  --amber-rose: #FFADAD;
+  --twilight-mauve: #D4BEE4;
+  
+  /* Text Colors */
   --text-dark: #2C3E2F;
   --text-light: #5A6B5C;
   --white: #FFFFFF;

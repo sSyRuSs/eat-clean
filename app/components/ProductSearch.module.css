@@ -154,8 +154,9 @@
 
 .card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 12px 24px rgba(168, 230, 163, 0.25);
-  border-color: #A8E6A3;
+  box-shadow: 0 12px 24px rgba(255, 191, 0, 0.3);
+  border-color: #FFBF00;
+  background: linear-gradient(135deg, #FFF9E6 0%, #FFF5E1 50%, #FFFAF0 100%);
 }
 
 .cardLink {
@@ -254,19 +255,20 @@
   justify-content: space-between;
   padding: 1.25rem 1.5rem;
   border-top: 1px solid #e0e0e0;
-  background-color: #fafafa;
+  background: linear-gradient(135deg, #FFE5CC 0%, #FFF0DB 50%, #F5E6FF 100%);
   gap: 1rem;
 }
 
 .price {
   font-weight: 800;
-  color: #A8E6A3;
+  color: #FF8C00;
   font-size: 1.2rem;
+  text-shadow: 0 1px 3px rgba(255, 191, 0, 0.3);
 }
 
 .addButton {
   padding: 0.7rem 1.2rem;
-  background: linear-gradient(135deg, #A8E6A3 0%, #90d88b 100%);
+  background: linear-gradient(135deg, #FFBF00 0%, #FF9500 100%);
   color: white;
   border: none;
   border-radius: 8px;
@@ -274,13 +276,14 @@
   cursor: pointer;
   transition: all 0.3s;
   font-size: 0.9rem;
-  box-shadow: 0 2px 6px rgba(168, 230, 163, 0.2);
+  box-shadow: 0 3px 8px rgba(255, 191, 0, 0.4);
   white-space: nowrap;
 }
 
 .addButton:hover {
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(168, 230, 163, 0.35);
+  box-shadow: 0 5px 15px rgba(255, 149, 0, 0.5);
+  background: linear-gradient(135deg, #FFB000 0%, #FF8500 100%);
 }
 
 .mealTypeTabs {
