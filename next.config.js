@@ -1,7 +1,10 @@
 /** @type {import('next').NextConfig} */
+const isProd = process.env.NODE_ENV === 'production'
+
 const nextConfig = {
   output: 'export',
-  basePath: '/eat-clean',
+  basePath: isProd ? '/eat-clean' : '',
+  assetPrefix: isProd ? '/eat-clean' : '',
   images: {
     unoptimized: true,
   },
