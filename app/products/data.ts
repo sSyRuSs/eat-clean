@@ -1029,7 +1029,7 @@ export const products: Product[] = [
     mealType: 'dessert',
     calories: '200 kcal',
     emoji: '🍲',
-    image: '/images/dessert/peach-gum-sweet-soup.png',
+    image: 'https://images.pexels.com/photos/6989863/pexels-photo-6989863.jpeg?auto=compress&cs=tinysrgb&w=800',
     fullDescription: {
       vi: 'Chè tiết yến nhựa đào là món chè dưỡng nhan cao cấp với ba thành phần quý: nhựa đào, tiết yến và bồ mễ, kết hợp với táo đỏ và hạt sen bổ dưỡng. Món chè này không chỉ ngon mà còn có tác dụng làm đẹp da, bổ phổi và tăng cường sức khỏe.',
       en: 'Peach gum and snow swallow sweet soup is a premium beauty-enhancing dessert with three precious ingredients: peach gum, snow swallow and white fungus, combined with nutritious red dates and lotus seeds. This dessert is not only delicious but also has the effect of beautifying skin, nourishing lungs and improving health.'
