@@ -483,7 +483,7 @@ export const products: Product[] = [
     mealType: 'lunch',
     calories: '495 kcal',
     emoji: '🍚',
-    image: 'https://images.pexels.com/photos/6419717/pexels-photo-6419717.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: 'https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=800',
     fullDescription: {
       vi: 'Cơm gạo lứt ức gà nướng là bữa trưa cân bằng hoàn hảo với ức gà nướng giàu protein, gạo lứt cung cấp carb phức hợp và salad rau củ tươi đa dạng. Món ăn lý tưởng cho người tập gym, vận động viên hoặc bất kỳ ai muốn duy trì lối sống lành mạnh.',
       en: 'Grilled chicken bowl with brown rice is a perfectly balanced lunch with protein-rich grilled chicken breast, brown rice providing complex carbs and diverse fresh vegetable salad. The ideal meal for gym-goers, athletes or anyone who wants to maintain a healthy lifestyle.'
@@ -1029,7 +1029,7 @@ export const products: Product[] = [
     mealType: 'dessert',
     calories: '200 kcal',
     emoji: '🍲',
-    image: 'https://images.pexels.com/photos/8477970/pexels-photo-8477970.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: '/images/dessert/peach-gum-sweet-soup.png',
     fullDescription: {
       vi: 'Chè tiết yến nhựa đào là món chè dưỡng nhan cao cấp với ba thành phần quý: nhựa đào, tiết yến và bồ mễ, kết hợp với táo đỏ và hạt sen bổ dưỡng. Món chè này không chỉ ngon mà còn có tác dụng làm đẹp da, bổ phổi và tăng cường sức khỏe.',
       en: 'Peach gum and snow swallow sweet soup is a premium beauty-enhancing dessert with three precious ingredients: peach gum, snow swallow and white fungus, combined with nutritious red dates and lotus seeds. This dessert is not only delicious but also has the effect of beautifying skin, nourishing lungs and improving health.'
