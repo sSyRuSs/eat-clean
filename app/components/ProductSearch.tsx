@@ -18,9 +18,11 @@ export default function ProductSearch() {
   const categories = ['', ...Array.from(new Set(products.map(p => p.category)))]
   const mealTypes: { value: MealType | ''; label: string }[] = [
     { value: '', label: t.search.allMeals || 'All' },
+    { value: 'combo', label: t.search.combo || 'Saving Combos' },
     { value: 'breakfast', label: t.search.breakfast || 'Breakfast' },
     { value: 'dessert', label: t.search.dessert || 'Dessert' },
-    { value: 'lunch', label: t.search.lunch || 'Lunch' }
+    { value: 'lunch', label: t.search.lunch || 'Lunch' },
+    { value: 'snack', label: t.search.snack || 'Drinks' }
   ]
 
   const filteredProducts = useMemo(() => {
@@ -41,6 +43,7 @@ export default function ProductSearch() {
   // Group products by meal type
   const productsByMealType = useMemo(() => {
     const grouped: Record<MealType, typeof filteredProducts> = {
+      combo: [],
       breakfast: [],
       dessert: [],
       lunch: [],
@@ -49,7 +52,7 @@ export default function ProductSearch() {
     
     filteredProducts.forEach(product => {
       if (product.mealType in grouped) {
-        grouped[product.mealType as MealType].push(product)
+        grouped[product.mealType].push(product)
       }
     })
     
@@ -57,10 +60,11 @@ export default function ProductSearch() {
   }, [filteredProducts])
 
   const mealTypeLabels: Record<MealType, string> = {
+    combo: t.search.combo || 'Saving Combos',
     breakfast: t.search.breakfast || 'Breakfast',
     dessert: t.search.dessert || 'Dessert',
     lunch: t.search.lunch || 'Lunch',
-    snack: t.search.snack || 'Snacks'
+    snack: t.search.snack || 'Drinks'
   }
 
   const renderProductSection = (mealType: MealType, products: typeof filteredProducts) => {
@@ -107,6 +111,60 @@ export default function ProductSearch() {
     )
   }
 
+  const groupedMealTypes: MealType[] = ['combo', 'breakfast', 'lunch', 'dessert', 'snack']
+
+  let resultContent
+  if (filteredProducts.length === 0) {
+    resultContent = (
+      <div className={styles.noResults}>
+        <p>😕 {t.search.noResults}</p>
+      </div>
+    )
+  } else if (selectedMealType === '') {
+    resultContent = (
+      <div>
+        {groupedMealTypes.map(mealType =>
+          renderProductSection(mealType, productsByMealType[mealType])
+        )}
+      </div>
+    )
+  } else {
+    resultContent = (
+      <div className={styles.grid}>
+        {filteredProducts.map(product => (
+          <div key={product.id} className={styles.card}>
+            <Link href={`/products/${product.id}`} className={styles.cardLink}>
+              {product.image && (
+                <div className={styles.imageContainer}>
+                  <img
+                    src={product.image}
+                    alt={getProductName(product, language)}
+                    className={styles.productImage}
+                  />
+                  <div className={styles.imageOverlay}>
+                    <h3 className={styles.overlayTitle}>{getProductName(product, language)}</h3>
+                    <p className={styles.overlayDescription}>
+                      {getProductDescription(product, language)}
+                    </p>
+                  </div>
+                </div>
+              )}
+            </Link>
+            <div className={styles.cardFooter}>
+              <span className={styles.price}>{product.price}</span>
+              <button
+                onClick={() => addToCart(product)}
+                className={styles.addButton}
+              >
+                {t.search.addToCart}
+              </button>
+            </div>
+          </div>
+        ))}
+      </div>
+    )
+  }
+
   return (
     <div className={styles.container}>
       <div className={styles.filters}>
@@ -130,7 +188,7 @@ export default function ProductSearch() {
             {mealTypes.map(type => (
               <button
                 key={type.value}
-                onClick={() => setSelectedMealType(type.value as MealType | '')}
+                onClick={() => setSelectedMealType(type.value)}
                 className={`${styles.mealTypeTab} ${selectedMealType === type.value ? styles.active : ''}`}
               >
                 {type.label}
@@ -201,42 +259,7 @@ export default function ProductSearch() {
           {t.search.found}: {filteredProducts.length}
         </p>
 
-        {filteredProducts.length === 0 ? (
-          <div className={styles.noResults}>
-            <p>😕 {t.search.noResults}</p>
-          </div>
-        ) : selectedMealType === '' ? (
-          // Show grouped by meal type when no specific meal type is selected
-          <div>
-            {(['breakfast', 'dessert', 'lunch'] as MealType[]).map(mealType =>
-              renderProductSection(mealType, productsByMealType[mealType])
-            )}
-          </div>
-        ) : (
-          // Show flat grid when specific meal type is selected
-          <div className={styles.grid}>
-            {filteredProducts.map(product => (
-              <div key={product.id} className={styles.card}>
-                <Link href={`/products/${product.id}`} className={styles.cardHeader}>
-                  <span className={styles.emoji}>{product.emoji}</span>
-                  <h3>{getProductName(product, language)}</h3>
-                </Link>
-                <p className={styles.description}>
-                  {getProductDescription(product, language)}
-                </p>
-                <div className={styles.cardFooter}>
-                  <span className={styles.price}>{product.price}</span>
-                  <button
-                    onClick={() => addToCart(product)}
-                    className={styles.addButton}
-                  >
-                    {t.search.addToCart}
-                  </button>
-                </div>
-              </div>
-            ))}
-          </div>
-        )}
+        {resultContent}
       </div>
     </div>
   )

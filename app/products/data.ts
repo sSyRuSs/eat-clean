@@ -1,6 +1,6 @@
 ﻿import { Language } from '../lib/translations'
 
-export type MealType = 'breakfast' | 'dessert' | 'lunch' | 'snack'
+export type MealType = 'breakfast' | 'dessert' | 'lunch' | 'snack' | 'combo'
 
 export interface Product {
   id: string
@@ -1079,6 +1079,618 @@ export const products: Product[] = [
     allergens: {
       vi: [],
       en: []
+    }
+  },
+
+  // ============= ĐỒ UỐNG / DRINKS =============
+  {
+    id: 'drink-1',
+    name: {
+      vi: 'Nước ép chanh dây mật ong',
+      en: 'Passion Fruit Juice with Honey'
+    },
+    description: {
+      vi: 'Chanh dây tươi, mật ong nguyên chất, đá lạnh',
+      en: 'Fresh passion fruit, pure honey, ice'
+    },
+    price: '36.000đ',
+    priceValue: 36000,
+    category: 'Drinks',
+    mealType: 'snack',
+    calories: '120 kcal',
+    emoji: '🍹',
+    image: 'https://i.pinimg.com/736x/79/14/80/791480a9878cfb5087eafbb63014443e.jpg',
+    fullDescription: {
+      vi: 'Nước ép chanh dây mật ong mang vị chua thanh tự nhiên của chanh dây hòa quyện cùng vị ngọt dịu từ mật ong nguyên chất. Thức uống giúp giải nhiệt, bổ sung vitamin C và mang lại cảm giác sảng khoái tức thì.',
+      en: 'Passion fruit juice with honey blends the naturally tangy taste of passion fruit with the gentle sweetness of pure honey. This refreshing drink helps cool the body, provides vitamin C, and delivers instant freshness.'
+    },
+    ingredients: {
+      vi: [
+        'Chanh dây tươi - 120g',
+        'Mật ong nguyên chất - 15ml',
+        'Nước lọc - 120ml',
+        'Đá viên',
+        'Lát chanh trang trí'
+      ],
+      en: [
+        'Fresh passion fruit - 120g',
+        'Pure honey - 15ml',
+        'Filtered water - 120ml',
+        'Ice cubes',
+        'Lime slice garnish'
+      ]
+    },
+    nutrition: {
+      protein: '1g',
+      carbs: '29g',
+      fat: '0g',
+      fiber: '3g'
+    },
+    benefits: {
+      vi: [
+        'Giàu vitamin C',
+        'Hỗ trợ tăng đề kháng',
+        'Giải nhiệt cơ thể',
+        'Vị ngọt tự nhiên từ mật ong'
+      ],
+      en: [
+        'Rich in vitamin C',
+        'Supports immunity',
+        'Helps cool the body',
+        'Naturally sweetened with honey'
+      ]
+    },
+    allergens: {
+      vi: [],
+      en: []
+    }
+  },
+  {
+    id: 'drink-2',
+    name: {
+      vi: 'Nước ép củ dền',
+      en: 'Beetroot Juice'
+    },
+    description: {
+      vi: 'Củ dền tươi ép lạnh, vị ngọt tự nhiên',
+      en: 'Cold-pressed fresh beetroot with natural sweetness'
+    },
+    price: '30.000đ',
+    priceValue: 30000,
+    category: 'Drinks',
+    mealType: 'snack',
+    calories: '95 kcal',
+    emoji: '🧃',
+    image: 'https://i.pinimg.com/736x/25/c3/3a/25c33adb677cce732a27cf18ce26277f.jpg',
+    fullDescription: {
+      vi: 'Nước ép củ dền là thức uống giàu chất chống oxy hóa với màu đỏ tím đặc trưng. Vị ngọt tự nhiên dễ uống, thích hợp cho người tập luyện hoặc cần bổ sung năng lượng sạch trong ngày.',
+      en: 'Beetroot juice is a drink rich in antioxidants, featuring its signature deep red-purple color. Its natural sweetness makes it easy to enjoy and ideal for active people needing clean daily energy.'
+    },
+    ingredients: {
+      vi: [
+        'Củ dền tươi - 180g',
+        'Táo đỏ - 40g',
+        'Nước lọc - 80ml',
+        'Đá viên'
+      ],
+      en: [
+        'Fresh beetroot - 180g',
+        'Red apple - 40g',
+        'Filtered water - 80ml',
+        'Ice cubes'
+      ]
+    },
+    nutrition: {
+      protein: '2g',
+      carbs: '22g',
+      fat: '0g',
+      fiber: '2g'
+    },
+    benefits: {
+      vi: [
+        'Giàu nitrate tự nhiên',
+        'Hỗ trợ tuần hoàn máu',
+        'Chống oxy hóa cao',
+        'Hỗ trợ vận động bền bỉ'
+      ],
+      en: [
+        'Rich in natural nitrates',
+        'Supports blood circulation',
+        'High in antioxidants',
+        'Supports endurance performance'
+      ]
+    },
+    allergens: {
+      vi: [],
+      en: []
+    }
+  },
+  {
+    id: 'drink-3',
+    name: {
+      vi: 'Nước ép táo - cần tây',
+      en: 'Apple Celery Juice'
+    },
+    description: {
+      vi: 'Táo xanh, cần tây tươi, chanh vàng',
+      en: 'Green apple, fresh celery, lemon'
+    },
+    price: '36.000đ',
+    priceValue: 36000,
+    category: 'Drinks',
+    mealType: 'snack',
+    calories: '110 kcal',
+    emoji: '🥤',
+    image: 'https://i.pinimg.com/736x/d5/44/c0/d544c053dc4831fd7a4c1828a89c527f.jpg',
+    fullDescription: {
+      vi: 'Nước ép táo cần tây là lựa chọn detox nhẹ nhàng với vị thanh mát, ít ngọt. Kết hợp táo xanh và cần tây giúp bổ sung chất xơ hòa tan và khoáng chất thiết yếu.',
+      en: 'Apple celery juice is a light detox choice with a crisp, refreshing, and mildly sweet profile. Combining green apple and celery helps provide soluble fiber and essential minerals.'
+    },
+    ingredients: {
+      vi: [
+        'Táo xanh - 120g',
+        'Cần tây - 80g',
+        'Nước cốt chanh - 10ml',
+        'Nước lọc - 100ml',
+        'Đá viên'
+      ],
+      en: [
+        'Green apple - 120g',
+        'Celery - 80g',
+        'Lemon juice - 10ml',
+        'Filtered water - 100ml',
+        'Ice cubes'
+      ]
+    },
+    nutrition: {
+      protein: '1g',
+      carbs: '24g',
+      fat: '0g',
+      fiber: '2g'
+    },
+    benefits: {
+      vi: [
+        'Thanh lọc nhẹ nhàng',
+        'Ít calo, ít đường',
+        'Bổ sung vitamin và khoáng chất',
+        'Hỗ trợ cân bằng nước'
+      ],
+      en: [
+        'Gentle detox support',
+        'Low calorie, low sugar',
+        'Provides vitamins and minerals',
+        'Supports hydration balance'
+      ]
+    },
+    allergens: {
+      vi: ['Có thể chứa cần tây'],
+      en: ['May contain celery']
+    }
+  },
+  {
+    id: 'drink-4',
+    name: {
+      vi: 'Nước ép cam',
+      en: 'Orange Juice'
+    },
+    description: {
+      vi: 'Cam tươi ép nguyên chất, không đường',
+      en: 'Fresh pure orange juice, no added sugar'
+    },
+    price: '30.000đ',
+    priceValue: 30000,
+    category: 'Drinks',
+    mealType: 'snack',
+    calories: '105 kcal',
+    emoji: '🍊',
+    image: 'https://i.pinimg.com/736x/db/6b/67/db6b677441ede48e76636fb6e88d8a22.jpg',
+    fullDescription: {
+      vi: 'Nước ép cam nguyên chất với hương vị chua ngọt hài hòa, giàu vitamin C tự nhiên. Phù hợp dùng buổi sáng hoặc giữa ngày để nạp năng lượng nhanh và tươi mới.',
+      en: 'Pure orange juice offers a balanced sweet-tangy taste and is naturally rich in vitamin C. Perfect for mornings or midday refreshment for quick, clean energy.'
+    },
+    ingredients: {
+      vi: [
+        'Cam vàng tươi - 250g',
+        'Nước lọc - 50ml',
+        'Đá viên'
+      ],
+      en: [
+        'Fresh oranges - 250g',
+        'Filtered water - 50ml',
+        'Ice cubes'
+      ]
+    },
+    nutrition: {
+      protein: '2g',
+      carbs: '24g',
+      fat: '0g',
+      fiber: '1g'
+    },
+    benefits: {
+      vi: [
+        'Bổ sung vitamin C nhanh',
+        'Tăng đề kháng',
+        'Hương vị dễ uống',
+        'Giải khát hiệu quả'
+      ],
+      en: [
+        'Quick vitamin C boost',
+        'Supports immunity',
+        'Easy and pleasant flavor',
+        'Effective hydration'
+      ]
+    },
+    allergens: {
+      vi: [],
+      en: []
+    }
+  },
+  {
+    id: 'drink-5',
+    name: {
+      vi: 'Nước ép dứa',
+      en: 'Pineapple Juice'
+    },
+    description: {
+      vi: 'Dứa chín ép tươi, thơm ngọt tự nhiên',
+      en: 'Fresh ripe pineapple juice with natural sweetness'
+    },
+    price: '30.000đ',
+    priceValue: 30000,
+    category: 'Drinks',
+    mealType: 'snack',
+    calories: '100 kcal',
+    emoji: '🍍',
+    image: 'https://i.pinimg.com/474x/d6/40/f0/d640f04e1f6b2745b0bbc417271786c6.jpg',
+    fullDescription: {
+      vi: 'Nước ép dứa tươi có vị chua ngọt dịu, thơm mát và dễ uống. Đây là thức uống giải nhiệt lý tưởng cho những ngày nắng nóng, đồng thời bổ sung enzyme tự nhiên từ dứa.',
+      en: 'Fresh pineapple juice has a gentle sweet-tangy flavor, aromatic and easy to drink. It is an ideal cooling beverage for hot days and provides natural enzymes from pineapple.'
+    },
+    ingredients: {
+      vi: [
+        'Dứa chín - 220g',
+        'Nước lọc - 80ml',
+        'Đá viên',
+        'Lá bạc hà (tùy chọn)'
+      ],
+      en: [
+        'Ripe pineapple - 220g',
+        'Filtered water - 80ml',
+        'Ice cubes',
+        'Mint leaves (optional)'
+      ]
+    },
+    nutrition: {
+      protein: '1g',
+      carbs: '23g',
+      fat: '0g',
+      fiber: '1g'
+    },
+    benefits: {
+      vi: [
+        'Bổ sung vitamin C và mangan',
+        'Hỗ trợ tiêu hóa nhẹ',
+        'Giải nhiệt nhanh',
+        'Hương vị nhiệt đới tươi mát'
+      ],
+      en: [
+        'Provides vitamin C and manganese',
+        'Supports gentle digestion',
+        'Quickly cools the body',
+        'Fresh tropical flavor'
+      ]
+    },
+    allergens: {
+      vi: [],
+      en: []
+    }
+  },
+  {
+    id: 'drink-6',
+    name: {
+      vi: 'Detox Táo - Chanh',
+      en: 'Apple Lemon Detox'
+    },
+    description: {
+      vi: 'Táo xanh, chanh vàng, dưa leo, lá bạc hà',
+      en: 'Green apple, lemon, cucumber, mint leaves'
+    },
+    price: '38.000đ',
+    priceValue: 38000,
+    category: 'Drinks',
+    mealType: 'snack',
+    calories: '90 kcal',
+    emoji: '🍏',
+    image: 'https://i.pinimg.com/736x/50/20/71/50207132547bd6027a4ad6b65ca78abd.jpg',
+    fullDescription: {
+      vi: 'Detox táo chanh có vị thanh sạch, chua nhẹ và mùi thơm bạc hà dễ chịu. Phù hợp cho người muốn thanh lọc nhẹ nhàng, giảm cảm giác ngấy và bổ sung nước cho cơ thể.',
+      en: 'Apple lemon detox offers a clean, lightly tangy taste with refreshing mint aroma. Great for gentle detox, reducing heaviness, and improving hydration.'
+    },
+    ingredients: {
+      vi: [
+        'Táo xanh - 100g',
+        'Nước cốt chanh - 12ml',
+        'Dưa leo - 50g',
+        'Lá bạc hà tươi',
+        'Nước lọc - 180ml',
+        'Đá viên'
+      ],
+      en: [
+        'Green apple - 100g',
+        'Lemon juice - 12ml',
+        'Cucumber - 50g',
+        'Fresh mint leaves',
+        'Filtered water - 180ml',
+        'Ice cubes'
+      ]
+    },
+    nutrition: {
+      protein: '0g',
+      carbs: '20g',
+      fat: '0g',
+      fiber: '1g'
+    },
+    benefits: {
+      vi: [
+        'Thanh lọc và bù nước',
+        'Giảm cảm giác ngấy',
+        'Giàu chất chống oxy hóa',
+        'Phù hợp ngày nóng'
+      ],
+      en: [
+        'Supports detox and hydration',
+        'Reduces heavy/full feeling',
+        'Rich in antioxidants',
+        'Perfect for hot weather'
+      ]
+    },
+    allergens: {
+      vi: [],
+      en: []
+    }
+  },
+  {
+    id: 'drink-7',
+    name: {
+      vi: 'Detox Dâu tây - Bạc hà',
+      en: 'Strawberry Mint Detox'
+    },
+    description: {
+      vi: 'Dâu tây tươi, lá bạc hà, chanh, nước khoáng',
+      en: 'Fresh strawberries, mint leaves, lemon, mineral water'
+    },
+    price: '38.000đ',
+    priceValue: 38000,
+    category: 'Drinks',
+    mealType: 'snack',
+    calories: '95 kcal',
+    emoji: '🍓',
+    image: 'https://i.pinimg.com/736x/18/10/dc/1810dcef229d17cd6a52613aa61afe9a.jpg',
+    fullDescription: {
+      vi: 'Detox dâu tây bạc hà có hương thơm dịu, vị chua ngọt tự nhiên và hậu vị mát lạnh từ bạc hà. Đây là lựa chọn đồ uống đẹp mắt, nhẹ nhàng và rất hợp với thực đơn eat clean.',
+      en: 'Strawberry mint detox has a soft aroma, naturally sweet-tangy flavor, and a cool minty finish. It is a vibrant, light drink that pairs perfectly with an eat-clean menu.'
+    },
+    ingredients: {
+      vi: [
+        'Dâu tây tươi - 100g',
+        'Lá bạc hà - 8 lá',
+        'Nước cốt chanh - 10ml',
+        'Nước khoáng - 180ml',
+        'Đá viên'
+      ],
+      en: [
+        'Fresh strawberries - 100g',
+        'Mint leaves - 8 leaves',
+        'Lemon juice - 10ml',
+        'Mineral water - 180ml',
+        'Ice cubes'
+      ]
+    },
+    nutrition: {
+      protein: '1g',
+      carbs: '21g',
+      fat: '0g',
+      fiber: '2g'
+    },
+    benefits: {
+      vi: [
+        'Giàu vitamin C và chất chống oxy hóa',
+        'Làm mát và thơm miệng',
+        'Ít calo, dễ uống',
+        'Hỗ trợ bù nước trong ngày'
+      ],
+      en: [
+        'Rich in vitamin C and antioxidants',
+        'Cooling and refreshing',
+        'Low calorie, easy to drink',
+        'Supports daily hydration'
+      ]
+    },
+    allergens: {
+      vi: [],
+      en: []
+    }
+  },
+
+  // ============= COMBO TIẾT KIỆM / SAVING COMBOS =============
+  {
+    id: 'combo-1',
+    name: {
+      vi: 'Combo tiết kiệm cho ngày năng lượng 1',
+      en: 'Energy Day Saving Combo 1'
+    },
+    description: {
+      vi: 'Sữa chua Hy Lạp trái cây hạt + Salad gà + Cơm gạo lứt ức gà nướng + Nước ép dứa',
+      en: 'Greek Yogurt with Fruits & Nuts + Chicken Salad + Grilled Chicken Brown Rice Bowl + Pineapple Juice'
+    },
+    price: '149.000đ',
+    priceValue: 149000,
+    category: 'Combo',
+    mealType: 'combo',
+    calories: '915 kcal',
+    emoji: '🥗',
+    image: 'https://images.unsplash.com/photo-1498837167922-ddd27525d352?ixlib=rb-4.0.3&w=800&fit=crop',
+    fullDescription: {
+      vi: 'Combo 1 dành cho ngày cần nhiều năng lượng với sự kết hợp cân bằng giữa protein, tinh bột tốt và vitamin từ trái cây. Combo gồm 4 món: Sữa chua Hy Lạp trái cây hạt, Salad gà, Cơm gạo lứt ức gà nướng và Nước ép dứa.',
+      en: 'Combo 1 is built for high-energy days with a balanced mix of protein, quality carbs, and fruit vitamins. It includes 4 items: Greek Yogurt with Fruits & Nuts, Chicken Salad, Grilled Chicken Brown Rice Bowl, and Pineapple Juice.'
+    },
+    ingredients: {
+      vi: [
+        'Sữa chua Hy Lạp trái cây hạt',
+        'Salad gà',
+        'Cơm gạo lứt ức gà nướng',
+        'Nước ép dứa'
+      ],
+      en: [
+        'Greek Yogurt with Fruits & Nuts',
+        'Chicken Salad',
+        'Grilled Chicken Brown Rice Bowl',
+        'Pineapple Juice'
+      ]
+    },
+    nutrition: {
+      protein: '56g',
+      carbs: '98g',
+      fat: '29g',
+      fiber: '17g'
+    },
+    benefits: {
+      vi: [
+        'Combo no lâu, giàu năng lượng',
+        'Protein cao hỗ trợ vận động',
+        'Đa dạng vitamin và khoáng chất',
+        'Tiết kiệm chi phí hơn gọi lẻ'
+      ],
+      en: [
+        'High-satiety and energy-focused combo',
+        'High protein to support activity',
+        'Diverse vitamins and minerals',
+        'More cost-effective than ordering separately'
+      ]
+    },
+    allergens: {
+      vi: ['Sữa', 'Hạt'],
+      en: ['Dairy', 'Nuts']
+    }
+  },
+  {
+    id: 'combo-2',
+    name: {
+      vi: 'Combo tiết kiệm cho ngày năng lượng 2',
+      en: 'Energy Day Saving Combo 2'
+    },
+    description: {
+      vi: 'Bánh mì nguyên cám bơ Địa Trung Hải + Cơm cá hồi poke bowl + Thạch quế hoa sữa dừa trân châu + Detox Táo & Chanh',
+      en: 'Mediterranean Avocado Whole Wheat Toast + Salmon Poke Bowl + Osmanthus Jelly with Coconut Milk & Pearls + Apple Lemon Detox'
+    },
+    price: '165.000đ',
+    priceValue: 165000,
+    category: 'Combo',
+    mealType: 'combo',
+    calories: '890 kcal',
+    emoji: '🍱',
+    image: 'https://images.unsplash.com/photo-1547592180-85f173990554?ixlib=rb-4.0.3&w=800&fit=crop',
+    fullDescription: {
+      vi: 'Combo 2 là lựa chọn cao cấp và cân bằng dinh dưỡng, kết hợp chất béo tốt, protein chất lượng và món tráng miệng thanh mát. Combo gồm 4 món: Bánh mì nguyên cám bơ Địa Trung Hải, Cơm cá hồi poke bowl, Thạch quế hoa sữa dừa trân châu và Detox Táo & Chanh.',
+      en: 'Combo 2 is a premium balanced set featuring healthy fats, quality protein, and a refreshing dessert. It includes 4 items: Mediterranean Avocado Whole Wheat Toast, Salmon Poke Bowl, Osmanthus Jelly with Coconut Milk & Pearls, and Apple Lemon Detox.'
+    },
+    ingredients: {
+      vi: [
+        'Bánh mì nguyên cám bơ Địa Trung Hải',
+        'Cơm cá hồi poke bowl',
+        'Thạch quế hoa sữa dừa trân châu',
+        'Detox Táo & Chanh'
+      ],
+      en: [
+        'Mediterranean Avocado Whole Wheat Toast',
+        'Salmon Poke Bowl',
+        'Osmanthus Jelly with Coconut Milk & Pearls',
+        'Apple Lemon Detox'
+      ]
+    },
+    nutrition: {
+      protein: '61g',
+      carbs: '94g',
+      fat: '32g',
+      fiber: '15g'
+    },
+    benefits: {
+      vi: [
+        'Giàu omega-3 và chất béo lành mạnh',
+        'Cân bằng giữa món chính và tráng miệng',
+        'Phù hợp ngày làm việc cường độ cao',
+        'Tiết kiệm hơn chọn món riêng lẻ'
+      ],
+      en: [
+        'Rich in omega-3 and healthy fats',
+        'Balanced between main and dessert',
+        'Great for high-performance workdays',
+        'More economical than individual orders'
+      ]
+    },
+    allergens: {
+      vi: ['Cá', 'Sữa', 'Mè'],
+      en: ['Fish', 'Dairy', 'Sesame']
+    }
+  },
+  {
+    id: 'combo-3',
+    name: {
+      vi: 'Combo tiết kiệm cho ngày năng lượng 3',
+      en: 'Energy Day Saving Combo 3'
+    },
+    description: {
+      vi: 'Kimbap bò rau củ + Canh đậu phụ rong biển + Thạch mác búp trái cây + Nước ép táo + cần tây',
+      en: 'Beef Vegetable Kimbap + Tofu Seaweed Soup + Aiyu Jelly with Tropical Fruits + Apple Celery Juice'
+    },
+    price: '129.000đ',
+    priceValue: 129000,
+    category: 'Combo',
+    mealType: 'combo',
+    calories: '765 kcal',
+    emoji: '🍲',
+    image: 'https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?ixlib=rb-4.0.3&w=800&fit=crop',
+    fullDescription: {
+      vi: 'Combo 3 là lựa chọn nhẹ nhàng, thanh mát và tiết kiệm, phù hợp cho ngày cần ăn gọn nhưng vẫn đủ dưỡng chất. Combo gồm 4 món: Kimbap bò rau củ, Canh đậu phụ rong biển, Thạch mác búp trái cây và Nước ép táo + cần tây.',
+      en: 'Combo 3 is a lighter and budget-friendly option, ideal for days when you want a clean but complete meal set. It includes 4 items: Beef Vegetable Kimbap, Tofu Seaweed Soup, Aiyu Jelly with Tropical Fruits, and Apple Celery Juice.'
+    },
+    ingredients: {
+      vi: [
+        'Kimbap bò rau củ',
+        'Canh đậu phụ rong biển',
+        'Thạch mác búp trái cây',
+        'Nước ép táo + cần tây'
+      ],
+      en: [
+        'Beef Vegetable Kimbap',
+        'Tofu Seaweed Soup',
+        'Aiyu Jelly with Tropical Fruits',
+        'Apple Celery Juice'
+      ]
+    },
+    nutrition: {
+      protein: '30g',
+      carbs: '109g',
+      fat: '16g',
+      fiber: '14g'
+    },
+    benefits: {
+      vi: [
+        'Nhẹ bụng, dễ tiêu hóa',
+        'Có món canh và món nước cân bằng',
+        'Bổ sung chất xơ và vitamin',
+        'Chi phí tiết kiệm cho bữa đầy đủ'
+      ],
+      en: [
+        'Light and easy to digest',
+        'Balanced with soup and drink',
+        'Good source of fiber and vitamins',
+        'Affordable complete-meal combo'
+      ]
+    },
+    allergens: {
+      vi: ['Đậu nành', 'Mè'],
+      en: ['Soy', 'Sesame']
     }
   }
 ]
