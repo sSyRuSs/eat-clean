@@ -7,7 +7,7 @@ export default function Footer() {
   const { t } = useLanguage()
 
   const socialLinks = [
-    { name: 'Facebook', icon: 'f', url: 'https://facebook.com' },
+    { name: 'Facebook', icon: 'f', url: 'https://www.facebook.com/profile.php?id=61578087142473' },
     { name: 'Instagram', icon: '📷', url: 'https://instagram.com' },
     { name: 'Zalo', icon: 'Z', url: 'https://zalo.me' },
     { name: 'Phone', icon: '☎️', url: 'tel:+84123456789' }
