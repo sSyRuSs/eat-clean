@@ -1529,7 +1529,7 @@ export const products: Product[] = [
     mealType: 'combo',
     calories: '915 kcal',
     emoji: '🥗',
-    image: 'https://images.unsplash.com/photo-1498837167922-ddd27525d352?ixlib=rb-4.0.3&w=800&fit=crop',
+    image: 'https://i.pinimg.com/736x/b9/2b/42/b92b424bce2ecb84d8fc54d03fe7aa00.jpg',
     fullDescription: {
       vi: 'Combo 1 dành cho ngày cần nhiều năng lượng với sự kết hợp cân bằng giữa protein, tinh bột tốt và vitamin từ trái cây. Combo gồm 4 món: Sữa chua Hy Lạp trái cây hạt, Salad gà, Cơm gạo lứt ức gà nướng và Nước ép dứa.',
       en: 'Combo 1 is built for high-energy days with a balanced mix of protein, quality carbs, and fruit vitamins. It includes 4 items: Greek Yogurt with Fruits & Nuts, Chicken Salad, Grilled Chicken Brown Rice Bowl, and Pineapple Juice.'
@@ -1589,7 +1589,7 @@ export const products: Product[] = [
     mealType: 'combo',
     calories: '890 kcal',
     emoji: '🍱',
-    image: 'https://images.unsplash.com/photo-1547592180-85f173990554?ixlib=rb-4.0.3&w=800&fit=crop',
+    image: 'https://i.pinimg.com/736x/ff/18/77/ff18776ee16fb5ed9bd44ff8be84d2b5.jpg',
     fullDescription: {
       vi: 'Combo 2 là lựa chọn cao cấp và cân bằng dinh dưỡng, kết hợp chất béo tốt, protein chất lượng và món tráng miệng thanh mát. Combo gồm 4 món: Bánh mì nguyên cám bơ Địa Trung Hải, Cơm cá hồi poke bowl, Thạch quế hoa sữa dừa trân châu và Detox Táo & Chanh.',
       en: 'Combo 2 is a premium balanced set featuring healthy fats, quality protein, and a refreshing dessert. It includes 4 items: Mediterranean Avocado Whole Wheat Toast, Salmon Poke Bowl, Osmanthus Jelly with Coconut Milk & Pearls, and Apple Lemon Detox.'
@@ -1649,7 +1649,7 @@ export const products: Product[] = [
     mealType: 'combo',
     calories: '765 kcal',
     emoji: '🍲',
-    image: 'https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?ixlib=rb-4.0.3&w=800&fit=crop',
+    image: 'https://i.pinimg.com/736x/9d/35/59/9d35598c6aa60a0960d40d8f9064cf3e.jpg',
     fullDescription: {
       vi: 'Combo 3 là lựa chọn nhẹ nhàng, thanh mát và tiết kiệm, phù hợp cho ngày cần ăn gọn nhưng vẫn đủ dưỡng chất. Combo gồm 4 món: Kimbap bò rau củ, Canh đậu phụ rong biển, Thạch mác búp trái cây và Nước ép táo + cần tây.',
       en: 'Combo 3 is a lighter and budget-friendly option, ideal for days when you want a clean but complete meal set. It includes 4 items: Beef Vegetable Kimbap, Tofu Seaweed Soup, Aiyu Jelly with Tropical Fruits, and Apple Celery Juice.'
