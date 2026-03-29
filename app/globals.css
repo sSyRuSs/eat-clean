@@ -18,6 +18,45 @@
   --text-light: #5A6B5C;
   --white: #FFFFFF;
   --background: #F8FBF8;
+
+  /* Card & Surface Colors */
+  --card-bg: #FFFFFF;
+  --card-shadow: rgba(0, 0, 0, 0.08);
+  --border-color: rgba(0, 0, 0, 0.08);
+  --input-bg: #FFFFFF;
+  --input-border: #D4F1D2;
+  --hover-bg: rgba(168, 230, 163, 0.1);
+  --overlay-bg: rgba(0, 0, 0, 0.3);
+  --code-bg: #f4f4f4;
+  --table-stripe: #f9f9f9;
+  --gradient-hero: linear-gradient(135deg, var(--light-green) 0%, var(--pastel-green) 100%);
+  --gradient-cta: linear-gradient(135deg, #FFBF00 0%, #FF9500 100%);
+}
+
+[data-theme="dark"] {
+  --pastel-green: #2d5a27;
+  --dark-green: #4a8f44;
+  --light-green: #1a3d16;
+  --text-dark: #e8f0e8;
+  --text-light: #a8bfa8;
+  --white: #1a1f1a;
+  --background: #0f140f;
+  --card-bg: #1a2118;
+  --card-shadow: rgba(0, 0, 0, 0.3);
+  --border-color: rgba(255, 255, 255, 0.08);
+  --input-bg: #1a2118;
+  --input-border: #2d5a27;
+  --hover-bg: rgba(74, 143, 68, 0.15);
+  --overlay-bg: rgba(0, 0, 0, 0.6);
+  --code-bg: #1a2118;
+  --table-stripe: #1a2118;
+  --gradient-hero: linear-gradient(135deg, #1a3d16 0%, #2d5a27 100%);
+  --gradient-cta: linear-gradient(135deg, #b8860b 0%, #cc6600 100%);
+  --amber-gold: #d4a000;
+  --golden-amber: #cc8f38;
+  --warm-amber: #cc7a00;
+  --honey-glow: #ccaa52;
+  --amber-rose: #cc8a8a;
 }
 
 * {
@@ -32,6 +71,7 @@ body {
   color: var(--text-dark);
   background-color: var(--background);
   line-height: 1.6;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 html {
@@ -41,6 +81,9 @@ html {
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
+  }
+  body {
+    transition: none;
   }
 }
 

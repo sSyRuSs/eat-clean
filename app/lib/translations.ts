@@ -250,6 +250,69 @@ export const translations = {
       address: "123 Đường Visionaries, TP.HCM",
       phone: "0123 456 789",
       email: "us@visionaries.vn"
+    },
+
+    // Theme
+    theme: {
+      dark: "Chế độ tối",
+      light: "Chế độ sáng"
+    },
+
+    // BMI Calculator
+    bmi: {
+      navLabel: "BMI",
+      title: "Tính chỉ số BMI",
+      subtitle: "Kiểm tra chỉ số khối cơ thể của bạn",
+      weight: "Cân nặng (kg)",
+      height: "Chiều cao (cm)",
+      weightPlaceholder: "Ví dụ: 65",
+      heightPlaceholder: "Ví dụ: 170",
+      calculate: "Tính BMI",
+      result: "Chỉ số BMI của bạn",
+      category: "Phân loại",
+      underweight: "Thiếu cân",
+      normal: "Bình thường",
+      overweight: "Thừa cân",
+      obese: "Béo phì",
+      advice: "Lời khuyên",
+      underweightAdvice: "Bạn nên tăng cường dinh dưỡng, ăn nhiều bữa hơn và chọn thực phẩm giàu protein và calo.",
+      normalAdvice: "Chúc mừng! Hãy duy trì chế độ ăn uống lành mạnh và tập thể dục đều đặn.",
+      overweightAdvice: "Bạn nên giảm lượng calo nạp vào, tăng cường vận động và chọn thực phẩm eat clean.",
+      obeseAdvice: "Hãy tham khảo ý kiến bác sĩ để có chế độ giảm cân an toàn và hiệu quả.",
+      fillForm: "Nhập thông tin để tính BMI",
+      yourBMI: "BMI của bạn",
+      range: "Chỉ số BMI khỏe mạnh: 18.5 - 24.9"
+    },
+
+    // Meal Planner
+    mealPlanner: {
+      navLabel: "Lịch ăn",
+      title: "Lập lịch ăn tuần",
+      subtitle: "Lên kế hoạch bữa ăn cho cả tuần",
+      monday: "Thứ 2",
+      tuesday: "Thứ 3",
+      wednesday: "Thứ 4",
+      thursday: "Thứ 5",
+      friday: "Thứ 6",
+      saturday: "Thứ 7",
+      sunday: "Chủ nhật",
+      breakfast: "Bữa sáng",
+      lunch: "Bữa trưa",
+      dinner: "Bữa tối",
+      snack: "Ăn vặt",
+      dropHere: "Kéo thả món ăn vào đây",
+      availableProducts: "Sản phẩm có sẵn",
+      searchPlaceholder: "Tìm món ăn...",
+      totalCalories: "Tổng calo",
+      totalProtein: "Tổng protein",
+      totalCarbs: "Tổng carbs",
+      totalFat: "Tổng chất béo",
+      clearAll: "Xóa tất cả",
+      clearDay: "Xóa ngày",
+      noProducts: "Không tìm thấy sản phẩm",
+      calories: "cal",
+      daySummary: "Tổng quan ngày",
+      weeklyOverview: "Tổng quan tuần"
     }
   },
   
@@ -504,6 +567,69 @@ export const translations = {
       address: "123 Visionaries Street, District 1, HCMC",
       phone: "0123 456 789",
       email: "us@visionaries.vn"
+    },
+
+    // Theme
+    theme: {
+      dark: "Dark mode",
+      light: "Light mode"
+    },
+
+    // BMI Calculator
+    bmi: {
+      navLabel: "BMI",
+      title: "BMI Calculator",
+      subtitle: "Check your Body Mass Index",
+      weight: "Weight (kg)",
+      height: "Height (cm)",
+      weightPlaceholder: "e.g. 65",
+      heightPlaceholder: "e.g. 170",
+      calculate: "Calculate BMI",
+      result: "Your BMI",
+      category: "Category",
+      underweight: "Underweight",
+      normal: "Normal",
+      overweight: "Overweight",
+      obese: "Obese",
+      advice: "Advice",
+      underweightAdvice: "You should eat more nutritious meals, have more frequent meals, and choose protein and calorie-rich foods.",
+      normalAdvice: "Congratulations! Keep maintaining a healthy diet and regular exercise.",
+      overweightAdvice: "You should reduce calorie intake, exercise more, and choose eat clean foods.",
+      obeseAdvice: "Please consult a doctor for a safe and effective weight loss plan.",
+      fillForm: "Enter your details to calculate BMI",
+      yourBMI: "Your BMI",
+      range: "Healthy BMI range: 18.5 - 24.9"
+    },
+
+    // Meal Planner
+    mealPlanner: {
+      navLabel: "Planner",
+      title: "Weekly Meal Planner",
+      subtitle: "Plan your meals for the entire week",
+      monday: "Monday",
+      tuesday: "Tuesday",
+      wednesday: "Wednesday",
+      thursday: "Thursday",
+      friday: "Friday",
+      saturday: "Saturday",
+      sunday: "Sunday",
+      breakfast: "Breakfast",
+      lunch: "Lunch",
+      dinner: "Dinner",
+      snack: "Snack",
+      dropHere: "Drop food here",
+      availableProducts: "Available Products",
+      searchPlaceholder: "Search meals...",
+      totalCalories: "Total Calories",
+      totalProtein: "Total Protein",
+      totalCarbs: "Total Carbs",
+      totalFat: "Total Fat",
+      clearAll: "Clear All",
+      clearDay: "Clear Day",
+      noProducts: "No products found",
+      calories: "cal",
+      daySummary: "Day Summary",
+      weeklyOverview: "Weekly Overview"
     }
   }
 }

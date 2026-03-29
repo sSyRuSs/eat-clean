@@ -11,13 +11,13 @@
 
 .header h1 {
   font-size: 2.5rem;
-  color: #2d5016;
+  color: var(--dark-green);
   margin: 0 0 0.75rem;
 }
 
 .header p {
   margin: 0;
-  color: #666;
+  color: var(--text-light);
 }
 
 .grid {
@@ -27,18 +27,18 @@
 }
 
 .card {
-  background: white;
+  background: var(--card-bg);
   border-radius: 16px;
   padding: 1.5rem;
-  border: 1px solid #e8e8e8;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+  border: 1px solid var(--border-color);
+  box-shadow: 0 6px 16px var(--card-shadow);
   transition: all 0.3s ease;
 }
 
 .card:hover {
   transform: translateY(-4px);
   box-shadow: 0 12px 24px rgba(168, 230, 163, 0.25);
-  border-color: #A8E6A3;
+  border-color: var(--pastel-green);
 }
 
 .cardTop {
@@ -49,8 +49,8 @@
 }
 
 .tag {
-  background: #e8f5e9;
-  color: #2d5016;
+  background: var(--hover-bg);
+  color: var(--dark-green);
   font-size: 0.75rem;
   font-weight: 700;
   padding: 0.35rem 0.6rem;
@@ -58,26 +58,26 @@
 }
 
 .meta {
-  color: #999;
+  color: var(--text-light);
   font-size: 0.8rem;
 }
 
 .card h2 {
   margin: 0 0 0.75rem;
   font-size: 1.2rem;
-  color: #2d5016;
+  color: var(--dark-green);
   line-height: 1.4;
 }
 
 .card p {
   margin: 0 0 1.25rem;
-  color: #666;
+  color: var(--text-light);
   font-size: 0.95rem;
   line-height: 1.6;
 }
 
 .readMore {
-  color: #2d5016;
+  color: var(--dark-green);
   font-weight: 700;
   text-decoration: none;
 }

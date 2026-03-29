@@ -1,7 +1,7 @@
 'use client'
 
-import { createContext, useContext, useState, ReactNode } from 'react'
-import { Product } from '../products/data'
+import { createContext, useContext, useState, useEffect, ReactNode } from 'react'
+import { Product, products } from '../products/data'
 
 interface CartItem {
   product: Product
@@ -20,8 +20,52 @@ interface CartContextType {
 
 const CartContext = createContext<CartContextType | undefined>(undefined)
 
+const CART_STORAGE_KEY = 'visionaries_cart'
+
+function loadCartFromStorage(): CartItem[] {
+  if (typeof window === 'undefined') return []
+  try {
+    const stored = localStorage.getItem(CART_STORAGE_KEY)
+    if (!stored) return []
+    const parsed: { productId: string; quantity: number }[] = JSON.parse(stored)
+    return parsed
+      .map(({ productId, quantity }) => {
+        const product = products.find(p => p.id === productId)
+        return product ? { product, quantity } : null
+      })
+      .filter((item): item is CartItem => item !== null)
+  } catch {
+    return []
+  }
+}
+
+function saveCartToStorage(items: CartItem[]) {
+  if (typeof window === 'undefined') return
+  try {
+    const serializable = items.map(({ product, quantity }) => ({
+      productId: product.id,
+      quantity,
+    }))
+    localStorage.setItem(CART_STORAGE_KEY, JSON.stringify(serializable))
+  } catch {
+    // Storage full or unavailable
+  }
+}
+
 export function CartProvider({ children }: { children: ReactNode }) {
   const [items, setItems] = useState<CartItem[]>([])
+  const [loaded, setLoaded] = useState(false)
+
+  useEffect(() => {
+    setItems(loadCartFromStorage())
+    setLoaded(true)
+  }, [])
+
+  useEffect(() => {
+    if (loaded) {
+      saveCartToStorage(items)
+    }
+  }, [items, loaded])
 
   const addToCart = (product: Product) => {
     setItems(prev => {

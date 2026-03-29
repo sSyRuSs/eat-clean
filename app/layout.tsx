@@ -3,6 +3,7 @@ import './globals.css'
 import { LanguageProvider } from './lib/LanguageContext'
 import { CartProvider } from './lib/CartContext'
 import { CaloriesProvider } from './context/CaloriesContext'
+import { ThemeProvider } from './lib/ThemeContext'
 import BackToTop from './components/BackToTop'
 
 export const metadata: Metadata = {
@@ -16,16 +17,18 @@ export default function RootLayout({
   readonly children: React.ReactNode
 }) {
   return (
-    <html lang="vi">
+    <html lang="vi" suppressHydrationWarning>
       <body>
-        <LanguageProvider>
-          <CartProvider>
-            <CaloriesProvider>
-              {children}
-              <BackToTop />
-            </CaloriesProvider>
-          </CartProvider>
-        </LanguageProvider>
+        <ThemeProvider>
+          <LanguageProvider>
+            <CartProvider>
+              <CaloriesProvider>
+                {children}
+                <BackToTop />
+              </CaloriesProvider>
+            </CartProvider>
+          </LanguageProvider>
+        </ThemeProvider>
       </body>
     </html>
   )

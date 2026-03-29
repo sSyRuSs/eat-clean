@@ -4,12 +4,14 @@ import Link from 'next/link'
 import { useState } from 'react'
 import { useLanguage } from '../lib/LanguageContext'
 import { useCart } from '../lib/CartContext'
+import { useTheme } from '../lib/ThemeContext'
 import Cart from './Cart'
 import styles from './Header.module.css'
 
 export default function Header() {
   const { language, setLanguage, t } = useLanguage()
   const { getTotalItems } = useCart()
+  const { theme, toggleTheme } = useTheme()
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [cartOpen, setCartOpen] = useState(false)
 
@@ -34,8 +36,18 @@ export default function Header() {
               <li><Link href="/about" onClick={() => setMobileMenuOpen(false)}>{t.nav.about}</Link></li>
               <li><Link href="/blog" onClick={() => setMobileMenuOpen(false)}>{t.nav.blog}</Link></li>
               <li><Link href="/calories" onClick={() => setMobileMenuOpen(false)}>📊 {t.calorieTracker?.title}</Link></li>
+              <li><Link href="/bmi" onClick={() => setMobileMenuOpen(false)}>⚖️ {t.bmi?.navLabel}</Link></li>
+              <li><Link href="/meal-planner" onClick={() => setMobileMenuOpen(false)}>📅 {t.mealPlanner?.navLabel}</Link></li>
             </ul>
             <div className={styles.headerActions}>
+              <button
+                className={styles.themeToggle}
+                onClick={toggleTheme}
+                aria-label={theme === 'light' ? 'Switch to dark mode' : 'Switch to light mode'}
+                title={theme === 'light' ? t.theme?.dark : t.theme?.light}
+              >
+                {theme === 'light' ? '🌙' : '☀️'}
+              </button>
               <div className={styles.languageSwitcher}>
                 <button
                   className={language === 'vi' ? styles.active : ''}

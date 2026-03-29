@@ -1,6 +1,6 @@
 .faq {
   padding: 4rem 1rem;
-  background: white;
+  background: var(--card-bg);
 }
 
 .container {
@@ -10,7 +10,7 @@
 
 .title {
   font-size: 2.5rem;
-  color: #2d5016;
+  color: var(--dark-green);
   text-align: center;
   margin: 0 0 0.5rem;
   font-weight: 700;
@@ -18,7 +18,7 @@
 
 .subtitle {
   font-size: 1.1rem;
-  color: #666;
+  color: var(--text-light);
   text-align: center;
   margin: 0 0 3rem;
   line-height: 1.6;
@@ -31,21 +31,21 @@
 }
 
 .item {
-  border: 2px solid #e0e0e0;
+  border: 2px solid var(--border-color);
   border-radius: 8px;
   overflow: hidden;
   transition: all 0.3s ease;
 }
 
 .item:hover {
-  border-color: #A8E6A3;
+  border-color: var(--pastel-green);
   box-shadow: 0 2px 8px rgba(168, 230, 163, 0.2);
 }
 
 .header {
   width: 100%;
   padding: 1.5rem;
-  background: white;
+  background: var(--card-bg);
   border: none;
   cursor: pointer;
   display: flex;
@@ -53,18 +53,18 @@
   gap: 1rem;
   font-size: 1rem;
   font-weight: 600;
-  color: #2d5016;
+  color: var(--text-dark);
   transition: all 0.3s ease;
   text-align: left;
 }
 
 .header:hover {
-  background-color: #f9f9f9;
+  background-color: var(--hover-bg);
 }
 
 .header.active {
-  background-color: #A8E6A3;
-  color: #fff;
+  background-color: var(--pastel-green);
+  color: var(--dark-green);
 }
 
 .emoji {
@@ -91,14 +91,14 @@
 
 .content {
   padding: 1.5rem;
-  background: #f9f9f9;
-  border-top: 2px solid #e0e0e0;
+  background: var(--hover-bg);
+  border-top: 2px solid var(--border-color);
   animation: slideDown 0.3s ease;
 }
 
 .content p {
   margin: 0;
-  color: #333;
+  color: var(--text-dark);
   line-height: 1.8;
   font-size: 1rem;
 }

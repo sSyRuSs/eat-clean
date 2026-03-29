@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: center;
   padding: 2rem;
-  background: linear-gradient(135deg, #f5f5f5 0%, #e8f5e9 100%);
+  background: var(--gradient-hero);
 }
 
 .content {
@@ -16,7 +16,7 @@
   font-size: 8rem;
   font-weight: 800;
   margin: 0;
-  color: #A8E6A3;
+  color: var(--pastel-green);
   line-height: 1;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -38,14 +38,14 @@
 
 .subtitle {
   font-size: 2rem;
-  color: #2d5016;
+  color: var(--dark-green);
   margin: 1rem 0;
   font-weight: 600;
 }
 
 .description {
   font-size: 1.1rem;
-  color: #666;
+  color: var(--text-light);
   margin: 1rem 0 3rem;
   line-height: 1.6;
 }
@@ -58,8 +58,8 @@
 }
 
 .primaryButton {
-  background-color: #A8E6A3;
-  color: #2d5016;
+  background-color: var(--pastel-green);
+  color: var(--dark-green);
   padding: 1rem 2rem;
   border-radius: 8px;
   text-decoration: none;
@@ -70,25 +70,26 @@
 }
 
 .primaryButton:hover {
-  background-color: #90d88b;
+  background-color: var(--dark-green);
+  color: white;
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(168, 230, 163, 0.4);
 }
 
 .secondaryButton {
-  background-color: white;
-  color: #2d5016;
+  background-color: var(--card-bg);
+  color: var(--dark-green);
   padding: 1rem 2rem;
   border-radius: 8px;
   text-decoration: none;
   font-weight: 600;
   font-size: 1.1rem;
   transition: all 0.3s;
-  border: 2px solid #A8E6A3;
+  border: 2px solid var(--pastel-green);
 }
 
 .secondaryButton:hover {
-  background-color: #f5f5f5;
+  background-color: var(--hover-bg);
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }

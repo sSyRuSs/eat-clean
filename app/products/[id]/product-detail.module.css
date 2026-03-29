@@ -97,10 +97,10 @@
 }
 
 .section {
-  background: var(--white);
+  background: var(--card-bg);
   padding: 2rem;
   border-radius: 15px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 12px var(--card-shadow);
 }
 
 .section h2 {
@@ -191,8 +191,8 @@
 
 /* Allergen Warning */
 .allergenWarning {
-  background: #FFF9E6;
-  border: 2px solid #FFE066;
+  background: var(--hover-bg);
+  border: 2px solid var(--amber-gold);
   border-radius: 10px;
   padding: 1.5rem;
   display: flex;

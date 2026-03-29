@@ -1,0 +1,245 @@
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.backButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border: 2px solid var(--pastel-green);
+  background: var(--card-bg);
+  color: var(--dark-green);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.backButton:hover {
+  background: var(--hover-bg);
+  transform: translateX(-2px);
+}
+
+.hero {
+  text-align: center;
+  padding: 2.5rem 2rem;
+  background: var(--gradient-hero);
+  border-radius: 20px;
+  margin-bottom: 2rem;
+}
+
+.hero h1 {
+  font-size: 2.2rem;
+  color: var(--text-dark);
+  margin-bottom: 0.5rem;
+}
+
+.hero p {
+  color: var(--text-light);
+  font-size: 1.1rem;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+.calculatorCard {
+  background: var(--card-bg);
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 4px 16px var(--card-shadow);
+}
+
+.inputGroup {
+  margin-bottom: 1.5rem;
+}
+
+.inputGroup label {
+  display: block;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.input {
+  width: 100%;
+  padding: 12px 16px;
+  border: 2px solid var(--input-border);
+  border-radius: 10px;
+  font-size: 1rem;
+  color: var(--text-dark);
+  background: var(--input-bg);
+  transition: all 0.3s ease;
+}
+
+.input:focus {
+  outline: none;
+  border-color: var(--dark-green);
+  box-shadow: 0 0 0 3px rgba(109, 184, 107, 0.2);
+}
+
+.calculateBtn {
+  width: 100%;
+  padding: 14px;
+  background: var(--gradient-cta);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(255, 191, 0, 0.35);
+}
+
+.calculateBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 149, 0, 0.5);
+}
+
+.resultCard {
+  background: var(--card-bg);
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 4px 16px var(--card-shadow);
+  min-height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.placeholder {
+  text-align: center;
+  color: var(--text-light);
+}
+
+.placeholderIcon {
+  font-size: 3rem;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.placeholder p {
+  font-size: 1.05rem;
+}
+
+.result {
+  width: 100%;
+  text-align: center;
+}
+
+.bmiValue {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 0.25rem;
+}
+
+.bmiLabel {
+  color: var(--text-light);
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.gauge {
+  margin: 1.5rem 0;
+}
+
+.gaugeTrack {
+  position: relative;
+  height: 12px;
+  border-radius: 6px;
+  overflow: visible;
+  display: flex;
+}
+
+.gaugeZone {
+  height: 100%;
+  position: absolute;
+}
+
+.gaugeZone:first-child {
+  border-radius: 6px 0 0 6px;
+}
+
+.gaugeZone:last-child {
+  border-radius: 0 6px 6px 0;
+}
+
+.gaugeIndicator {
+  position: absolute;
+  top: -6px;
+  width: 4px;
+  height: 24px;
+  background: var(--text-dark);
+  border-radius: 2px;
+  transform: translateX(-50%);
+  transition: left 0.5s ease;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.gaugeLabels {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+  font-size: 0.75rem;
+  color: var(--text-light);
+}
+
+.categoryTag {
+  display: inline-block;
+  padding: 8px 20px;
+  border-radius: 20px;
+  color: white;
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin: 1rem 0;
+}
+
+.advice {
+  background: var(--hover-bg);
+  border-radius: 12px;
+  padding: 1.25rem;
+  margin-top: 1rem;
+  text-align: left;
+}
+
+.advice h4 {
+  color: var(--dark-green);
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.advice p {
+  color: var(--text-light);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.range {
+  color: var(--text-light);
+  font-size: 0.85rem;
+  margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+  .content {
+    grid-template-columns: 1fr;
+  }
+
+  .hero h1 {
+    font-size: 1.7rem;
+  }
+
+  .bmiValue {
+    font-size: 3rem;
+  }
+}

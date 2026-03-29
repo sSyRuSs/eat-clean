@@ -11,14 +11,14 @@
 
 .header h1 {
   font-size: 2.5rem;
-  color: #2d5016;
+  color: var(--dark-green);
   margin-bottom: 10px;
   font-weight: 700;
 }
 
 .header p {
   font-size: 1.1rem;
-  color: #666;
+  color: var(--text-light);
 }
 
 .calculatorSection {
@@ -30,16 +30,16 @@
 
 .formSection,
 .resultSection {
-  background: #ffffff;
-  border: 2px solid #A8E6A3;
+  background: var(--card-bg);
+  border: 2px solid var(--pastel-green);
   border-radius: 16px;
   padding: 30px;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 12px var(--card-shadow);
 }
 
 .formSection h2,
 .resultSection h2 {
-  color: #2d5016;
+  color: var(--dark-green);
   font-size: 1.5rem;
   margin-bottom: 25px;
   font-weight: 600;
@@ -51,7 +51,7 @@
 
 .fieldgroup label {
   display: block;
-  color: #2d5016;
+  color: var(--dark-green);
   font-weight: 500;
   margin-bottom: 8px;
   font-size: 0.95rem;
@@ -60,10 +60,10 @@
 .segmentedButtons {
   display: flex;
   gap: 10px;
-  border: 2px solid #A8E6A3;
+  border: 2px solid var(--pastel-green);
   border-radius: 8px;
   padding: 4px;
-  background: #f9fbf9;
+  background: var(--hover-bg);
 }
 
 .segmentBtn {
@@ -71,7 +71,7 @@
   padding: 10px 16px;
   border: none;
   background: transparent;
-  color: #2d5016;
+  color: var(--dark-green);
   font-weight: 500;
   cursor: pointer;
   border-radius: 6px;
@@ -84,8 +84,8 @@
 }
 
 .segmentBtn.active {
-  background: #A8E6A3;
-  color: #2d5016;
+  background: var(--pastel-green);
+  color: var(--dark-green);
   font-weight: 600;
 }
 
@@ -93,12 +93,12 @@
 .select {
   width: 100%;
   padding: 12px 16px;
-  border: 2px solid #A8E6A3;
+  border: 2px solid var(--pastel-green);
   border-radius: 8px;
   font-size: 0.95rem;
   font-family: inherit;
-  color: #2d5016;
-  background: #f9fbf9;
+  color: var(--text-dark);
+  background: var(--input-bg);
   transition: all 0.3s ease;
   box-sizing: border-box;
 }
@@ -106,26 +106,15 @@
 .input:focus,
 .select:focus {
   outline: none;
-  border-color: #90d88b;
+  border-color: var(--dark-green);
   box-shadow: 0 0 0 3px rgba(168, 230, 163, 0.2);
-  background: #ffffff;
-}
-
-.select {
-  cursor: pointer;
-  appearance: none;
-  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%232d5016' stroke-width='2'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
-  background-repeat: no-repeat;
-  background-position: right 12px center;
-  background-size: 20px;
-  padding-right: 40px;
 }
 
 .saveBtn {
   width: 100%;
   padding: 14px 24px;
-  background: linear-gradient(135deg, #A8E6A3 0%, #90d88b 100%);
-  color: #2d5016;
+  background: var(--gradient-hero);
+  color: var(--dark-green);
   border: none;
   border-radius: 8px;
   font-weight: 600;
@@ -147,8 +136,8 @@
 }
 
 .resultCard {
-  background: linear-gradient(135deg, rgba(168, 230, 163, 0.1) 0%, rgba(144, 216, 139, 0.1) 100%);
-  border: 2px solid #A8E6A3;
+  background: var(--hover-bg);
+  border: 2px solid var(--pastel-green);
   border-radius: 12px;
   padding: 20px;
   margin-bottom: 15px;
@@ -162,7 +151,7 @@
 }
 
 .label {
-  color: #2d5016;
+  color: var(--dark-green);
   font-weight: 500;
   font-size: 0.95rem;
 }
@@ -170,25 +159,25 @@
 .value {
   font-size: 2.2rem;
   font-weight: 700;
-  color: #A8E6A3;
+  color: var(--pastel-green);
 }
 
 .unit {
-  color: #666;
+  color: var(--text-light);
   font-size: 0.85rem;
   font-weight: 500;
 }
 
 .note {
-  background: rgba(168, 230, 163, 0.2);
-  border-left: 4px solid #A8E6A3;
+  background: var(--hover-bg);
+  border-left: 4px solid var(--pastel-green);
   padding: 15px;
   border-radius: 8px;
   margin-top: 20px;
 }
 
 .note p {
-  color: #2d5016;
+  color: var(--text-dark);
   font-size: 0.95rem;
   margin: 0;
   line-height: 1.5;
@@ -203,11 +192,10 @@
 }
 
 .placeholder p {
-  color: #999;
+  color: var(--text-light);
   font-size: 1rem;
 }
 
-/* Responsive Design */
 @media (max-width: 1024px) {
   .calculatorSection {
     grid-template-columns: 1fr;
