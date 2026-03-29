@@ -23,6 +23,8 @@
   font-weight: bold;
   color: var(--text-dark);
   z-index: 1001;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .mobileMenuButton {
@@ -45,15 +47,22 @@
 
 .navLinks {
   display: flex;
-  gap: 2rem;
+  gap: 1.5rem;
   list-style: none;
   flex: 1;
+  flex-wrap: nowrap;
+  overflow: hidden;
+}
+
+.navLinks li {
+  flex-shrink: 0;
 }
 
 .navLinks a {
   color: var(--text-dark);
   font-weight: 500;
   transition: color 0.3s;
+  white-space: nowrap;
 }
 
 .navLinks a:hover {
@@ -70,6 +79,8 @@
   display: flex;
   align-items: center;
   gap: 1rem;
+  flex-shrink: 0;
+  flex-wrap: nowrap;
 }
 
 .cartButton {
